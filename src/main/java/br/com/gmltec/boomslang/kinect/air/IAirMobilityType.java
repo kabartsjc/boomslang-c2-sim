@@ -1,4 +1,4 @@
-package br.com.gmltec.boomslang.kinect;
+package br.com.gmltec.boomslang.kinect.air;
 
 import br.com.gmltec.boomslang.core.entities.IEntityType;
 
@@ -11,6 +11,8 @@ public interface IAirMobilityType extends IEntityType {
 	public double descendentRate();
 	
 	public double getAutonomy();
+	
+	public double getConsume(long time_sec);
 	
 	public double getMaximumSpeed();
 	public double getStallSpeed();

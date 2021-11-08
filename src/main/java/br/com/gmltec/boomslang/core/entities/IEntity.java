@@ -20,8 +20,5 @@ public interface IEntity {
 	public long getCurrentTime();
 	public void setStartTime(long time_sec);
 	
-	public void update(long update_interval_sec);
-	
-	
 
 }

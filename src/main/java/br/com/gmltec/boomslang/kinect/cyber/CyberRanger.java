@@ -1,12 +1,12 @@
-package br.com.gmltec.boomslang.kinect.impl;
+package br.com.gmltec.boomslang.kinect.cyber;
 
 import br.com.gmltec.boomslang.core.entities.IEntityType;
 import br.com.gmltec.boomslang.core.geo.Coordinate;
 import br.com.gmltec.boomslang.core.geo.ILocation;
 import br.com.gmltec.boomslang.kinect.IStaticEntity;
 
-public class CyberRanger implements IStaticEntity {
-	private long id;
+public class CyberRanger  {
+	/*private long id;
 	private String name;
 	private IEntityType type;
 	private DOMAIN domain;
@@ -105,6 +105,6 @@ public class CyberRanger implements IStaticEntity {
 		if (currentTime>=endTime) {
 			status = STATUS.FINISHED;
 		}
-	}
+	}*/
 
 }
