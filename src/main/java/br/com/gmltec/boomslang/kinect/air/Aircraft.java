@@ -20,15 +20,15 @@ public class Aircraft extends IAirplane{
 	}
 
 	@Override
-	public void update(long update_interval_sec, double kinect_cond_factor) {
+	public void update(long update_interval_sec, double air_weather_factor) {
 		this.currentTime = currentTime + update_interval_sec;
 		
 		if ((currentTime >= startTime)  && (status!=STATUS.FINISHED || status!=STATUS.DESTROYED) ) {
 			status = STATUS.RUNNING;
 			double reducer = 0;
 			//check the resilience factor
-			if (kinect_cond_factor>this.kinect_resilience) {
-				reducer = distUtils.calculateProbability(kinect_cond_factor);
+			if (air_weather_factor>this.kinect_resilience) {
+				reducer = distUtils.calculateProbability(air_weather_factor);
 			}
 				
 			
@@ -156,6 +156,4 @@ public class Aircraft extends IAirplane{
 			currentPosition= GeoUtils.calculateNewPosition(currentPosition, distance_mt_horiz, distance_mt_vert, bearing);	
 		}	
 	}
-
-
 }
