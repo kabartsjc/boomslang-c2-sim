@@ -27,3 +27,5 @@ hs_err_pid*
 .settings/org.eclipse.core.resources.prefs
 .settings/org.eclipse.jdt.core.prefs
 .settings/org.eclipse.m2e.core.prefs
+model/boomslang-c2-sim.vpp.bak_000f
+model/boomslang-c2-sim.vpp.bak_001d
