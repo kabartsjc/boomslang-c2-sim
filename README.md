@@ -11,7 +11,8 @@ Its name is originated from a large, highly venomous snake in the family Colubri
 
 <h2> Boomslang C2 Simulator General Architecture</h2>
 
-![Logo](resources/img/boomslang_architecture_n.png)
+<a href="resources/img/boomslang_architecture_n.png" target="_blank">![Logo](resources/img/boomslang_architecture_n.png)</a>
+
 
 Boomslang C2 simulator uses a <b>publish-subscribe architecture</b>. Each simulation engine publishes the status of their entities, as consume the simulation status produced by other engines to their internal calculus. <b>Exercise Manager</b> is responsible for the time management and synchronization of all machines involved in the simulation environment. During its initialization, Exercise Management read the plans saved in the JSON Database component, starts the WeatherSimEngine(s), and loads the KinectSimEngine(s) C2SimEngine(s), and CommunicationSimEngine(s), using previous information.
 
