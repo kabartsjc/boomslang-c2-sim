@@ -2,7 +2,6 @@
 
 ![Logo](resources/img/logo_small.png)
 
-
 <h2> What is Boomslang C2 Simulator? </h2>
 
 <b>Boomslang</b> is a C2 simulator that provides an open-source tool to simulate new C2 doctrines and exercises. The main idea is to offer a simplistic modeling tool, enabling the design of complex exercises with different types of forces (air, land, navy, space, and cyber) and missions, and through his engine analyze the combination of individuals effects, providing to the analyst the cost, impact, and risk of the scenario. Moreover, it has an extensible design, enabling you to extend it to support your specific problem.
