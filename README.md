@@ -1,6 +1,6 @@
 # boomslang-c2-sim
 
-![Logo](resources/img/logo_small.png)
+<a href="resources/img/boomslang_architecture_n.png" target="_blank">![Logo](resources/img/boomslang_architecture_n.png)</a>
 
 <h2> What is Boomslang C2 Simulator? </h2>
 
