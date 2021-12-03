@@ -30,7 +30,25 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<!-- include all the dependencies into the jar so it's easier to execute 
+				the example -->
+			<plugin>
+				<groupId>org.fusesource.mvnplugins</groupId>
+				<artifactId>maven-uberize-plugin</artifactId>
+				<version>1.14</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>uberize</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
+
+
 	</build>
 
 	<properties>
@@ -129,8 +147,8 @@
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 		</dependency>
-		
-		
+
+
 		<!-- https://mvnrepository.com/artifact/org.geotools/gt-main -->
 		<dependency>
 			<groupId>org.geotools</groupId>
@@ -151,7 +169,18 @@
 			<version>${geotools.version}</version>
 		</dependency>
 
-		
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-jms_1.1_spec</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.qpid</groupId>
+			<artifactId>qpid-jms-client</artifactId>
+			<version>0.40.0</version>
+		</dependency>
+
 	</dependencies>
 
 

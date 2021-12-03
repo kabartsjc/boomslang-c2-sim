@@ -3,7 +3,6 @@ package br.com.gmltec.boomslang.kinect.cyber;
 import br.com.gmltec.boomslang.core.entities.IEntityType;
 import br.com.gmltec.boomslang.core.geo.Coordinate;
 import br.com.gmltec.boomslang.core.geo.ILocation;
-import br.com.gmltec.boomslang.kinect.IStaticEntity;
 
 public class CyberRanger  {
 	/*private long id;

@@ -5,9 +5,9 @@ import br.com.gmltec.boomslang.core.geo.GeoUtils;
 public class Aircraft extends IAirplane{
 	private final double hor_error_unit_mt = 300;
 	private final double vert_error_unit_mt = 304; // 100ft
-
+	
 	public Aircraft(long id, String name, 
-			IAirMobilityType type, double kinectResilience) {
+			AirMobilityType type, double kinectResilience) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -16,7 +16,7 @@ public class Aircraft extends IAirplane{
 		this.status = STATUS.CREATED;
 		this.fstatus=AIR_NAVIG_STATUS.LANDED;
 		this.kinect_resilience=kinectResilience;
-		this.autonomy=type.getAutonomy();
+		this.autonomy=type.getAutonomy_sec();
 	}
 
 	@Override
@@ -51,7 +51,7 @@ public class Aircraft extends IAirplane{
 				status = STATUS.FINISHED;
 			}
 			
-			autonomy = autonomy - type.getConsume(update_interval_sec);
+			autonomy = autonomy - (update_interval_sec);
 			
 			if (autonomy<=0 && status!=STATUS.FINISHED)
 				status = STATUS.DESTROYED;
@@ -61,15 +61,15 @@ public class Aircraft extends IAirplane{
 	
 	public void takeoff(long update_interval_sec, double reducer) {
 		fstatus = AIR_NAVIG_STATUS.CLIMB;
-		double hSpeed = this.type.getAscedentSpeed();
-		double vSpeed = this.type.ascedentRate();
+		double hSpeed = this.type.getAscedentSpeed_ms();
+		double vSpeed = this.type.getAscedentRate_ms();
 		targetPosition = this.navPlan.getNextPosition();
 		
 		double distance_mt_horiz = hSpeed * update_interval_sec * (1-reducer);
 		
 		double distance_mt_vert = vSpeed * update_interval_sec;
 		
-		bearing = GeoUtils.calculateBearing(currentPosition, targetPosition);
+		double bearing = GeoUtils.calculateBearing(currentPosition, targetPosition);
 		
 		currentPosition= GeoUtils.calculateNewPosition(currentPosition, distance_mt_horiz, distance_mt_vert, bearing);
 	}
@@ -83,18 +83,18 @@ public class Aircraft extends IAirplane{
 		double delta_mt_vert = Math.abs(currentPosition.getAltitude()-targetPosition.getAltitude());
 		if (delta_mt_vert<=this.vert_error_unit_mt) {
 			fstatus = AIR_NAVIG_STATUS.CRUIZE;
-			hSpeed = this.type.getAscedentSpeed();
+			hSpeed = this.type.getAscedentSpeed_ms();
 			vSpeed = 0;
 		}
 		
 		else {
-			hSpeed = this.type.getAscedentSpeed();
-			vSpeed = this.type.ascedentRate();
+			hSpeed = this.type.getAscedentSpeed_ms();
+			vSpeed = this.type.getAscedentRate_ms();
 		}
 		
 		double distance_mt_horiz = hSpeed * update_interval_sec* (1-reducer);
 		double distance_mt_vert = vSpeed * update_interval_sec;
-		bearing = GeoUtils.calculateBearing(currentPosition, targetPosition);
+		double bearing = GeoUtils.calculateBearing(currentPosition, targetPosition);
 		currentPosition= GeoUtils.calculateNewPosition(currentPosition, distance_mt_horiz, distance_mt_vert, bearing);
 	}
 	
@@ -111,19 +111,19 @@ public class Aircraft extends IAirplane{
 				fstatus = AIR_NAVIG_STATUS.LANDING;
 				targetPosition = navPlan.getEndPosition();
 				
-				hSpeed = this.type.getDescedentSpeed();
-				vSpeed = (-1)*this.type.descendentRate();
+				hSpeed = this.type.getDescedentSpeed_ms();
+				vSpeed = (-1)*this.type.getDescendentRate_ms();
 			}
 		}
 		
 		else {
-			hSpeed = this.type.getAscedentSpeed();
+			hSpeed = this.type.getAscedentSpeed_ms();
 			vSpeed = 0;
 		}
 		
 		double distance_mt_horiz = hSpeed * update_interval_sec* (1-reducer);
 		double distance_mt_vert = vSpeed * update_interval_sec;
-		bearing = GeoUtils.calculateBearing(currentPosition, targetPosition);
+		double bearing = GeoUtils.calculateBearing(currentPosition, targetPosition);
 		currentPosition= GeoUtils.calculateNewPosition(currentPosition, distance_mt_horiz, distance_mt_vert, bearing);
 	}
 	
@@ -141,18 +141,18 @@ public class Aircraft extends IAirplane{
 			// check is in the cruize level
 			double delta_mt_vert = Math.abs(currentPosition.getAltitude()-targetPosition.getAltitude());
 			if (delta_mt_vert<=this.vert_error_unit_mt) {
-				hSpeed = this.type.getAscedentSpeed();
+				hSpeed = this.type.getAscedentSpeed_ms();
 				vSpeed = 0;
 			}
 			
 			else {
-				hSpeed = this.type.getDescedentSpeed();
-				vSpeed = (-1)*this.type.descendentRate();
+				hSpeed = this.type.getDescedentSpeed_ms();
+				vSpeed = (-1)*this.type.getDescendentRate_ms();
 			}
 			
 			double distance_mt_horiz = hSpeed * update_interval_sec* (1-reducer);
 			double distance_mt_vert = vSpeed * update_interval_sec;
-			bearing = GeoUtils.calculateBearing(currentPosition, targetPosition);
+			double bearing = GeoUtils.calculateBearing(currentPosition, targetPosition);
 			currentPosition= GeoUtils.calculateNewPosition(currentPosition, distance_mt_horiz, distance_mt_vert, bearing);	
 		}	
 	}
