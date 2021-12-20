@@ -27,39 +27,9 @@ An important element in the simulator arcitecture is the **MessageBroker**, whic
 
 The **JSONDatabase** is a logical abstraction of the management of JSON files used in configuring all entities and engines in the simulation environment. There are two groups of files: **_database_** and **_exercise_** files. 
 
-Thes **database files** are located in **resources/data/** and describes the basic information required to perform the simulation and consume internally by the engines. They are:
-- **air_kinect_types.json**: it contains the type of air entities and its kinect parameters.
-- **navy_kinect_types.json**: it contains the type of navy entities and its kinect parameters.
-- **army_kinect_types.j.jsons.json.jsonon**: it contains the type of army entities and its kinect parameters.
-- **space_kinect_types.j.json.json.jsonson**: it contains the type of space entities and its kinect parameters.
-- **cyber_kinect_types.j.jsons.json.jsonon**: it contains the type of cyber entities and its kinect parameters.
-
-<br>
-
-- **air_c2_types.json**: it contains the type of air entities, its weapons and its mission (c2.json) parameters.
-- **navy_c2_types.json**: it contains the type of navy entities, its weapons and its mission .json(c2) parameters.
-- **army_c2_types.json**: it contains the type of army entities, its weapons and its mission (.jsonc2) parameters.
-- **space_c2_types.json**: it contains the type of space entities, its weapons and its mission.json (c2) parameters.
-- **cyber_c2_types.json**: it contains the type of cyber entities, its weapons and its mission .json(c2) parameters.
-
-<br>
-
-- **mission_types.json**: it contains the core taxonomy of missions.
-- **air_c2_types.json**: it extends the mission_types, including the specific doctrine to perform  missions of air force entities.
-- **navy_c2_types.json**: it extends the mission_types, including the specific doctrine to perform  missions of navy force entities.
-- **army_c2_types.json**: it extends the mission_types, including the specific doctrine to perform  missions of army force entities.
-- **space_c2_types.json**: it extends the mission_types, including the specific doctrine to perform  missions of space force entities.
-- **cyber_c2_types.json**: it extends the mission_types, including the specific doctrine to perform  missions of cyber force entities.
-
-<br>
-
-- **resources/img**: it is a special folder, which contains the images used by the simulator.
-
-<br>
-
+Theses **database files** are located in **resources/data/** and describes the basic information required to perform the simulation and consume internally by the engines. 
 
 The **exercise** files describe a specific exercise and it is saved inside the folder **resources/exe**. They are:
-
 -**simulation.json**: it is the main file of simulation; all the other files are dependent on the information provided by this file.
 - **plans.json**: it is the file that describes the entities involved in the exercise environment and its plans.
 - **weather.json**: it is the file that describes the several distributions and other probabilistic information of weather scenarios.
