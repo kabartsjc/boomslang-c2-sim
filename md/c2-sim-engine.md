@@ -1,0 +1,1 @@
+The C2SimEngine is responsible for performing the mission of the entity. Each entity has a group of capacities that produces effects in the simulation environment. The factors involved in the entity performance are the weather (from the WeatherSimEngine), the entity's health, and residual effects produced by the other entities.
