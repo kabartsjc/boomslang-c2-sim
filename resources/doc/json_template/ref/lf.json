@@ -1,0 +1,87 @@
+[
+    {
+        "id":"AIRDEFENSE",
+        "description": "AIR DEFENSE SYSTEM"
+    },
+    {
+        "id":"ARM",
+        "description": "ARMY"
+    },
+    {
+        "id":"ARTILLERY",
+        "description": "ARTILLERY"
+    },
+    {
+        "id":"BAT",
+        "description": "BATTALION"
+    },
+    {
+        "id":"BRIG",
+        "description": "BRIGADE"
+    },
+    {
+        "id":"CIA",
+        "description": "COMPANNY"
+    },
+    {
+        "id":"CIV",
+        "description": "CIVILIAN"
+    },
+    {
+        "id":"CMD",
+        "description": "COMMAND HQ"
+    },
+    {
+        "id":"CRITICAL",
+        "description": "CRITICAL INFRASTRUCTURE"
+    },
+    {
+        "id":"EW",
+        "description": "ELETRONIC WARFARE"
+    },
+    {
+        "id":"GUNSYSTEM",
+        "description": "GUN FIRE SYSTEM"
+    },
+    {
+        "id":"MINE",
+        "description": "MINE"
+    },
+    {
+        "id":"MORTAR",
+        "description": "MORTAR SYSTEM"
+    },
+    {
+        "id":"PLATOON",
+        "description": "PLATOON"
+    },
+    {
+        "id":"SEAL",
+        "description": "SEA AIR LAND (SEAL)"
+    },
+    {
+        "id":"SF",
+        "description": "SPECIAL FORCES"
+    },
+    {
+        "id":"SPY",
+        "description": "SPY"
+    },
+    {
+        "id":"SUPPLY",
+        "description": "SUPPLY SYSTEM"
+    },
+    {
+        "id":"TANK",
+        "description": "TANK"
+    },
+    {
+        "id":"ULV",
+        "description": "UNMANNED LAND VEHICLE"
+    },
+    {
+        "id":"VIP",
+        "description": "VERY IMPORTANT PEOPLE"
+    }
+
+]

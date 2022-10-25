@@ -3,7 +3,7 @@ package br.com.gmltec.boomslang.kinect.sea;
 import br.com.gmltec.boomslang.core.entities.IEntityType;
 import br.com.gmltec.boomslang.kinect.IKinectEntity;
 
-public abstract class IBattleShip extends IKinectEntity{
+public abstract class IBattleShip {}/*extends IKinectEntity{
 	public enum SHIP_NAVIG_STATUS {
 		DOCKED,
 		DIVING,
@@ -26,4 +26,4 @@ public abstract class IBattleShip extends IKinectEntity{
 		return nstatus;
 	}
 	
-}
+}*/

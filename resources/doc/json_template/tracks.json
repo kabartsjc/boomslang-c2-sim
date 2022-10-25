@@ -1,0 +1,30 @@
+[
+    {
+        "id":"BF123",
+        "team": "B",
+        "force": "AF",
+        "type": "HEL",
+        "ctask":"T123",
+        "nTask":"T124",
+        "status":1,
+        "risk":0.9,
+        "opportunity":0.6,
+        "cost":0.8,
+        "latitude":-45.123,
+        "longitude":-20.32
+    },
+    {
+        "id":"BF177",
+        "team": "R",
+        "force": "AF",
+        "type": "FIGHTER",
+        "ctask":"T321",
+        "nTask":"None",
+        "status":0,
+        "risk":0.1,
+        "opportunity":1.0,
+        "cost":0.9,
+        "latitude":-32.123,
+        "longitude":-40.32
+    }
+]

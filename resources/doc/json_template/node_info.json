@@ -1,0 +1,22 @@
+{
+    "id": "BF123",
+    "team": "B",
+    "force": "AF",
+    "type": "HEL",
+    "status": 1,
+    "risk": 0.9,
+    "opportunity": 0.6,
+    "cost": 0.8,
+    "latitude": -45.123,
+    "longitude": -20.32,
+    "speed":42.12,
+    "level":124,
+    "ctask": [
+        {aakakkakakakaka},
+        {akakakakkaakakkaka},
+        {akskskkkasa}
+    ],
+    "nTask": [
+        {aakakkakakakaka}      
+    ]
+}

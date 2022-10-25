@@ -1,0 +1,10 @@
+[
+    {
+        "id":"SPVEHICLE",
+        "description": "SPACE VEHICLE"
+    },
+    {
+        "id":"SAT",
+        "description": "SATTELITE"
+    }
+]

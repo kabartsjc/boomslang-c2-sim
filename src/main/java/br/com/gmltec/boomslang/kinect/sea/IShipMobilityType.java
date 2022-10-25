@@ -2,7 +2,7 @@ package br.com.gmltec.boomslang.kinect.sea;
 
 import br.com.gmltec.boomslang.core.entities.IEntityType;
 
-public class IShipMobilityType implements IEntityType {
+public class IShipMobilityType {}/*implements IEntityType {
 	
 	private long id;
 	private String name;
@@ -55,4 +55,4 @@ public class IShipMobilityType implements IEntityType {
 	}
 	
 
-}
+}*/

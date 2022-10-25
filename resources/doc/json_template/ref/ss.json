@@ -1,0 +1,44 @@
+[
+    {
+        "id":"AEROCARRIER",
+        "description": "AEROCARRIER"
+    },
+    {
+        "id":"AMPHIBIOUS",
+        "description": "AMPHIBIOUS"
+    },
+    {
+        "id":"CIV",
+        "description": "CIVILIAN"
+    },
+    {
+        "id":"CRUISER",
+        "description": "CRUISER"
+    },
+    {
+        "id":"DESTROYER",
+        "description": "DESTROYER"
+    },
+    {
+        "id":"FRIGATE",
+        "description": "FRIGATE"
+    },
+    {
+        "id":"MINE",
+        "description": "MINE"
+    },
+    {
+        "id":"PBOAT",
+        "description": "PATROL BOAT"
+    },
+    {
+        "id":"TORPEDO",
+        "description": "TORPEDO"
+    },
+    {
+        "id":"USV",
+        "description": "UNMANNED SURFACE VEHICLE (USV)"
+    }
+    
+
+]
