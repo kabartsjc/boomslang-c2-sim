@@ -1,0 +1,139 @@
+[
+    {
+        "id":"m01",
+        "node_id": [
+            "RFIG1",
+            "RFIG2"
+        ],
+        "effectiveness":0.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.0,
+                "route":[
+                    "7.995796, -14.022978",
+                    "8.722812, -13.183272",
+                    "8.391209, -12.965699"
+                ],
+                "required_weapon":[
+                ]
+            }
+        ]
+    },
+
+    {
+        "id":"m02",
+        "node_id": [
+            "RFIG3",
+            "RFIG4"
+        ],
+        "effectiveness":0.0,
+        "task":[
+            {
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.0,
+                "route":[
+                    "8.746431, -13.142182",
+                    "8.571011, -11.155843",
+                    "7.009972, -10.391161"
+                ],
+                "required_weapon":[
+                ]
+            }
+        ]
+    },
+    {
+        "id":"m02",
+        "node_id": [
+            "RFIG3",
+            "RFIG4"
+        ],
+        "effectiveness":0.0,
+        "task":[
+            {
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.0,
+                "route":[
+                    "8.746431, -13.142182",
+                    "8.571011, -11.155843",
+                    "7.009972, -10.391161"
+                ],
+                "required_weapon":[
+                ]
+            }
+        ]
+    },
+
+    {
+        "id":"m02",
+        "node_id": [
+            "RFIG5",
+            "RFIG6"
+        ],
+        "effectiveness":0.6,
+        "task":[
+            {
+                "target":"BCMD1",
+                "type": "ATTACK",
+                "effectiveness":0.6,
+                "route":[
+                    "7.653842, -11.532073"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
+    },
+    {
+        "id":"m03",
+        "node_id": [
+            "RHEL1"
+        ],
+        "effectiveness":0.0,
+        "task":[
+            {
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.0,
+                "route":[
+                    "8.617520, -12.945881",
+                    "8.159744, -12.911140",
+                    "8.716687, -11.634439"
+                ],
+                "required_weapon":[
+                   
+                ]
+            }
+        ]
+    },
+    {
+        "id":"m04",
+        "node_id": [
+            "RUAV1",
+            "RUAV2"
+        ],
+        "effectiveness":0.6,
+        "task":[
+            {
+                "target":"BAT1",
+                "type": "ATTACK",
+                "effectiveness":0.0,
+                "route":[
+                    "9.041550, -11.709092",
+                    "8.136002, -11.020972"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
+    }
+
+]

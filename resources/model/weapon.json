@@ -1,0 +1,182 @@
+[
+	{
+		"id": "MT1",
+		"domain": "AIR",
+		"range": 18000,
+		"type": "MISSILE",
+		"precision": 0.8,
+        "reliability": 0.9,
+		"intensity": 0.85
+        
+	},
+	{
+		"id": "MT2",
+		"type": "MISSILE",
+		"range": 18000,
+		"domain": "AIR",
+		"precision": 1,
+		"intensity": 0.9,
+        "reliability": 0.85
+	},
+	{
+		"id": "MT3",
+		"type": "MISSILE",
+		"range": 20000,
+		"domain": "AIR",
+		"precision": 1,
+		"intensity": 0.75,
+        "reliability": 0.85
+	},
+	{
+		"id": "LMT1",
+		"type": "MISSILE",
+		"range": 4000,
+		"domain": "LAND",
+		"precision": 0.9,
+		"intensity": 1,
+        "reliability": 0.85
+	},
+	{
+		"id": "LMT2",
+		"type": "MISSILE",
+		"range": 4000,
+		"domain": "SEA",
+		"precision": 0.9,
+		"intensity": 0.7,
+        "reliability": 0.85
+	},
+	{
+		"id": "SMT1",
+		"type": "MISSILE",
+		"range": 250000,
+		"domain": "AIR",
+		"precision": 0.9,
+		"intensity": 0.9,
+        "reliability": 0.85
+	},
+	{
+		"id": "SMT2",
+		"type": "MISSILE",
+		"range": 280000,
+		"domain": "SEA",
+		"precision": 1,
+		"intensity": 0.9,
+        "reliability": 0.85
+	},
+	{
+		"id": "BT1",
+		"type": "BOMB",
+		"range": 28000,
+		"domain": "AIR",
+		"precision": 1,
+		"intensity": 0.9,
+        "reliability": 0.85
+	},
+	{
+		"id": "BT2",
+		"type": "BOMB",
+		"range": 26000,
+		"domain": "AIR",
+		"precision": 1,
+		"intensity": 0.85,
+        "reliability": 0.85
+	},
+	{
+		"id": "BT3",
+		"type": "BOMB",
+		"range": 18000,
+		"domain": "AIR",
+		"precision": 1,
+		"intensity": 1,
+        "reliability": 0.85
+	},
+	{
+		"id": "LBT1",
+		"type": "BOMB",
+		"range": 28000,
+		"domain": "AIR",
+		"precision": 1,
+		"intensity": 0.9,
+        "reliability": 0.85
+	},
+	{
+		"id": "GBT1",
+		"type": "BOMB",
+		"range": 38000,
+		"domain": "AIR",
+		"precision": 1,
+		"intensity": 0.9,
+        "reliability": 0.85
+	},
+	{
+		"id": "ACT1",
+		"type": "CANNON",
+		"range": 1000,
+		"domain": "AIR",
+		"precision": 1,
+		"intensity": 0.75,
+        "reliability": 0.85
+	},
+	{
+		"id": "ACT2",
+		"type": "CANNON",
+		"range": 2000,
+		"domain": "AIR",
+		"precision": 0.8,
+		"intensity": 0.8,
+        "reliability": 0.85
+	},
+	{
+		"id": "GCT1",
+		"type": "CANNON",
+		"range": 3000,
+		"domain": "SEA",
+		"precision": 0.95,
+		"intensity": 1,
+        "reliability": 0.85
+	},
+	{
+		"id": "GCT2",
+		"type": "CANNON",
+		"range": 2500,
+		"domain": "LAND",
+		"precision": 1,
+		"intensity": 0.9,
+        "reliability": 0.85
+	},
+	{
+		"id": "JMT1",
+		"type": "EW",
+		"range": 75000,
+		"domain": "AIR",
+		"precision": 1,
+		"intensity": 0.8,
+        "reliability": 0.85
+	},
+	{
+		"id": "JMT2",
+		"type": "EW",
+		"range": 75000,
+		"domain": "SEA",
+		"precision": 1,
+		"intensity": 0.8,
+        "reliability": 0.85
+	},
+	{
+		"id": "JMT3",
+		"type": "EW",
+		"range": 75000,
+		"domain": "LAND",
+		"precision": 1,
+		"intensity": 0.8
+	},
+	{
+		"id": "JMT4",
+		"type": "EW",
+		"range": 0,
+		"domain": "SPACE",
+		"precision": 1,
+		"intensity": 0.8,
+        "reliability": 0.85
+	}
+]

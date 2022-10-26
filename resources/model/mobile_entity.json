@@ -1,0 +1,134 @@
+[
+	{
+		"id": "SAT",
+		"force": "SP",
+		"lethality_factor": 0.0,
+		"resilience_factor": 0.9,
+		"vulnerabilityfactor": 0.2,
+        "speed": -1.0,
+		"climb_rate": -1.0,
+		"autonomy":-1.0
+    },
+    {
+		"id": "ARM",
+		"force": "LF",
+	    "lethality_factor": 0.6,
+		"resilience_factor": 0.8,
+		"vulnerabilityfactor": 0.6,
+        "speed": 4.16667,
+		"climb_rate": -1.0,
+		"autonomy":-1.0
+    },
+	{
+		"id": "BAT",
+		"force": "LF",
+	    "lethality_factor": 0.5,
+		"resilience_factor": 0.7,
+		"vulnerabilityfactor": 0.7,
+        "speed": 5.16667,
+		"climb_rate": -1.0,
+		"autonomy":-1.0
+    },
+	{
+		"id": "DESTROYER",
+		"force": "SS",
+	    "lethality_factor": 0.95,
+		"resilience_factor": 0.95,
+		"vulnerabilityfactor": 0.5,
+        "speed": 15.8,
+		"climb_rate": -1.0,
+		"autonomy":-1.0
+    },
+	{
+		"id": "NSUBMARINE",
+		"force": "SB",
+	    "lethality_factor": 1.00,
+		"resilience_factor": 0.95,
+		"vulnerabilityfactor": 0.0001,
+        "speed": 12.8,
+		"climb_rate": -1.0,
+		"autonomy":-1.0
+    },
+	{
+		"id": "AEROCARRIER",
+		"force": "SS",
+	    "lethality_factor": 0.99,
+		"resilience_factor": 0.90,
+		"vulnerabilityfactor": 0.02,
+        "speed": 15.8,
+		"climb_rate": -1.0,
+		"autonomy":-1.0
+    },
+	{
+		"id": "CRUISER",
+		"force": "SS",
+	    "lethality_factor": 0.79,
+		"resilience_factor": 0.70,
+		"vulnerabilityfactor": 0.1,
+        "speed": 17.8,
+		"climb_rate": -1.0,
+		"autonomy":-1.0
+    },
+	{
+		"id": "FIGHTER",
+		"force": "AF",
+	    "lethality_factor": 0.90,
+		"resilience_factor": 0.85,
+		"vulnerabilityfactor": 0.4,
+        "speed": 670.5,
+		"climb_rate": 350.0,
+		"autonomy":-1.0
+    },
+	{
+		"id": "UAV",
+		"force": "AF",
+	    "lethality_factor": 0.7,
+		"resilience_factor": 0.45,
+		"vulnerabilityfactor": 0.6,
+        "speed":45.8,
+		"climb_rate": 100.0,
+		"autonomy":-1.0
+    },
+	{
+		"id": "HELI",
+		"force": "AF",
+	    "lethality_factor": 0.8,
+		"resilience_factor": 0.7,
+		"vulnerabilityfactor": 0.4,
+        "speed":79.9,
+		"climb_rate": 10.0,
+		"autonomy":-1.0
+    },
+	{
+		"id": "AEW",
+		"force": "AF",
+	    "lethality_factor": 0.4,
+		"resilience_factor": 0.9,
+		"vulnerabilityfactor": 0.6,
+        "speed":227.48,
+		"climb_rate": 100.0,
+		"autonomy":-1.0
+	},
+	{
+		"id": "SF",
+		"force": "LF",
+	    "lethality_factor": 0.7,
+		"resilience_factor": 0.9,
+		"vulnerabilityfactor": 0.3,
+        "speed":9.48,
+		"climb_rate": 0.0,
+		"autonomy":-1.0
+    },
+	{
+		"id": "SPY",
+		"force": "LF",
+	    "lethality_factor": 0.0,
+		"resilience_factor": 0.9,
+		"vulnerabilityfactor": 0.0,
+        "speed":3.48,
+		"climb_rate": 0.0,
+		"autonomy":-1.0
+    }
+
+	     
+]

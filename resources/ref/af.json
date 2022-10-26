@@ -1,0 +1,49 @@
+[
+    {
+        "id":"AEW",
+        "description": "AEW ELECTRONIC MEASURES"
+    },
+    {
+        "id":"CARGO",
+        "description": "CARGO"
+    },
+    {
+        "id":"CSAR",
+        "description": "COMBAT-SAR"
+    },
+    {
+        "id":"FIGHTER",
+        "description": "FIGHTER AIRCRAFT"
+    },
+    {
+        "id":"HELI",
+        "description": "HELICOPTER"
+    },
+    {
+        "id":"MISSILE",
+        "description": "MISSILE"
+    },
+    {
+        "id":"PATROL",
+        "description": "PATROL / RECONNAINSSANCE"
+    },
+    
+    {
+        "id":"TANK",
+        "description": "TANK"
+    },
+
+    {
+        "id":"UAV",
+        "description": "UNMANNED AERIAL VEHICLE"
+    },
+    {
+        "id":"VIP",
+        "description": "VERY IMPORTANT PERSON"
+    },
+    
+    {
+        "id":"ANTISUB",
+        "description": "ANTISUBMARINE WARFARE"
+    }
+]

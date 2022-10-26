@@ -1,0 +1,14 @@
+[
+    {
+        "id":"CSUBMARINE",
+        "description": "CONVENTIONAL SUBMARINE"
+    },
+    {
+        "id":"NSUBMARINE",
+        "description": "NUCLEAR SUBMARINE"
+    },
+    {
+        "id":"UUVS",
+        "description": "UNMANNED UNDERWATER VEHICLES (UUVS)"
+    }
+]

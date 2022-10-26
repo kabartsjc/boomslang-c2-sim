@@ -1,0 +1,124 @@
+[
+	{
+		"id": "AIR_RADAR_T1_DRONE",
+		"range": 100000,
+		"domain": "AIR",
+		"precision": 0.9,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "AIR_RADAR_T2_FIGHTER",
+		"range": 1239000,
+		"domain": "AIR",
+		"precision": 1,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "AIR_RADAR_T3_EW",
+		"range": 5000000,
+		"domain": "AIR",
+		"precision": 0.8,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	
+	{
+		"id": "AIR_RADAR_T3_NORMAL",
+		"range": 900000,
+		"domain": "AIR",
+		"precision": 0.8,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	
+	{
+		"id": "LAND_RADAR_T1",
+		"range": 400000,
+		"domain": "LAND",
+		"precision": 0.8,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "LAND_RADAR_T2",
+		"range": 200000,
+		"domain": "LAND",
+		"precision": 1,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "CYBER_T1",
+		"range": 0,
+		"domain": "CYBER",
+		"precision": 1,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "CYBER_T2",
+		"range": 0,
+		"domain": "CYBER",
+		"precision": 0.9,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "CYBER_T3",
+		"range": 0,
+		"domain": "CYBER",
+		"precision": 0.7,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "SEA_RADAR_T1",
+		"range": 500000,
+		"domain": "SEA",
+		"precision": 0.6,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "SEA_RADAR_T2",
+		"range": 400000,
+		"domain": "SEA",
+		"precision": 0.8,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "SEA_RADAR_T3",
+		"range": 200000,
+		"domain": "SEA",
+		"precision": 1,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "SAT_RADAR_T1",
+		"range": 0,
+		"domain": "SPACE",
+		"precision": 1,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "SAT_RADAR_T2",
+		"range": 0,
+		"domain": "SPACE",
+		"precision": 0.9,
+        "reliability": 0.9,
+		"intensity": 0.85
+	},
+	{
+		"id": "SAT_RADAR_T3",
+		"range": 0,
+		"domain": "SPACE",
+		"precision": 0.8,
+        "reliability": 0.9,
+		"intensity": 0.85
+	}
+]
