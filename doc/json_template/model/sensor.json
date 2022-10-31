@@ -1,6 +1,6 @@
 [
 	{
-		"sensor_type_id": "AIR_RADAR_T1_DRONE",
+		"id": "AIR_RADAR_T1_DRONE",
 		"range": 100000,
 		"domain": "AIR",
 		"precision": 0.9,
@@ -8,7 +8,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "AIR_RADAR_T2_FIGHTER",
+		"id": "AIR_RADAR_T2_FIGHTER",
 		"range": 1239000,
 		"domain": "AIR",
 		"precision": 1,
@@ -16,7 +16,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "AIR_RADAR_T3_EW",
+		"id": "AIR_RADAR_T3_EW",
 		"range": 5000000,
 		"domain": "AIR",
 		"precision": 0.8,
@@ -25,7 +25,7 @@
 	},
 	
 	{
-		"sensor_type_id": "AIR_RADAR_T3_NORMAL",
+		"id": "AIR_RADAR_T3_NORMAL",
 		"range": 900000,
 		"domain": "AIR",
 		"precision": 0.8,
@@ -34,7 +34,7 @@
 	},
 	
 	{
-		"sensor_type_id": "LAND_RADAR_T1",
+		"id": "LAND_RADAR_T1",
 		"range": 400000,
 		"domain": "LAND",
 		"precision": 0.8,
@@ -42,7 +42,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "LAND_RADAR_T2",
+		"id": "LAND_RADAR_T2",
 		"range": 200000,
 		"domain": "LAND",
 		"precision": 1,
@@ -50,7 +50,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "CYBER_T1",
+		"id": "CYBER_T1",
 		"range": 0,
 		"domain": "CYBER",
 		"precision": 1,
@@ -58,7 +58,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "CYBER_T2",
+		"id": "CYBER_T2",
 		"range": 0,
 		"domain": "CYBER",
 		"precision": 0.9,
@@ -66,7 +66,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "CYBER_T3",
+		"id": "CYBER_T3",
 		"range": 0,
 		"domain": "CYBER",
 		"precision": 0.7,
@@ -74,7 +74,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "SEA_RADAR_T1",
+		"id": "SEA_RADAR_T1",
 		"range": 500000,
 		"domain": "SEA",
 		"precision": 0.6,
@@ -82,7 +82,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "SEA_RADAR_T2",
+		"id": "SEA_RADAR_T2",
 		"range": 400000,
 		"domain": "SEA",
 		"precision": 0.8,
@@ -90,7 +90,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "SEA_RADAR_T3",
+		"id": "SEA_RADAR_T3",
 		"range": 200000,
 		"domain": "SEA",
 		"precision": 1,
@@ -98,7 +98,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "SAT_RADAR_T1",
+		"id": "SAT_RADAR_T1",
 		"range": 0,
 		"domain": "SPACE",
 		"precision": 1,
@@ -106,7 +106,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "SAT_RADAR_T2",
+		"id": "SAT_RADAR_T2",
 		"range": 0,
 		"domain": "SPACE",
 		"precision": 0.9,
@@ -114,7 +114,7 @@
 		"intensity": 0.85
 	},
 	{
-		"sensor_type_id": "SAT_RADAR_T3",
+		"id": "SAT_RADAR_T3",
 		"range": 0,
 		"domain": "SPACE",
 		"precision": 0.8,

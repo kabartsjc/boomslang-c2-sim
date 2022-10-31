@@ -12,11 +12,11 @@
     "speed":42.12,
     "level":124,
     "ctask": [
-        {aakakkakakakaka},
-        {akakakakkaakakkaka},
-        {akskskkkasa}
+        "aakakkakakakaka",
+        "akakakakkaakakkaka",
+        "akskskkkasa"
     ],
     "nTask": [
-        {aakakkakakakaka}      
+        "aakakkakakakaka"      
     ]
 }

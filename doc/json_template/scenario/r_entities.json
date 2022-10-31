@@ -1,0 +1,425 @@
+[
+	{
+		"id": "RARMY1",
+		"type": "ARM",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "LF",
+		"sensor":[
+			"LAND_RADAR_T1"
+		],
+		"weapon":[
+			"GCT2:1"
+		],
+		"cost":0.72,
+        "latitude":8.452794,  
+        "longitude":-13.275190,
+        "altitude":0.0
+	},
+    {
+		"id": "RARMY2",
+		"type": "ARM",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "LF",
+		"sensor":[
+			"LAND_RADAR_T1"
+		],
+		"weapon":[
+			"GCT2:2"
+		],
+		"cost":0.62,
+        "latitude":8.250958, 
+        "longitude":-13.03209,
+        "altitude":0.0
+	},
+	{
+		"id": "RDD1",
+		"type": "DESTROYER",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "SS",
+		"sensor":[
+			"SEA_RADAR_T3"
+		],
+		"weapon":[
+			"JMT2:1",
+			"GCT1:2",
+			"LMT2:4",
+			"SMT2:4"
+		],
+		"cost":0.92,
+        "latitude":8.198622, 
+        "longitude":-13.584436,
+        "altitude":0.0
+	},
+	{
+		"id": "RDD2",
+		"type": "DESTROYER",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "SS",
+		"sensor":[
+			"SEA_RADAR_T3"
+		],
+		"weapon":[
+			"JMT2:1",
+			"GCT1:2",
+			"LMT2:4",
+			"SMT2:4"
+		],
+		"cost":0.92,
+        "latitude":8.657439, 
+        "longitude":-13.723240,
+        "altitude":0.0
+	},
+    {
+		"id": "RCMD",
+		"type": "CMD",
+        "ent_type":"STATIC",
+		"behavior_mode": 0,
+		"team": "R",
+		"force": "LF",
+		"sensor":[
+		],
+		"weapon":[
+		],
+		"cost":1.0,
+        "latitude":8.488668, 
+        "longitude":-13.276401
+	},
+    {
+		"id": "RADEF",
+		"type": "AIRDEFENSE",
+        "ent_type":"STATIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "LF",
+		"sensor":[
+			"LAND_RADAR_T2"
+		],
+		"weapon":[
+			"JMT3:1",
+			"GCT2:1",
+			"LMT1:4"
+		],
+		"cost":0.92,
+        "latitude":8.452794,  
+        "longitude":-13.275190
+	},
+   	{
+		"id": "RGUN",
+		"type": "GUNSYSTEM",
+        "ent_type":"STATIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "LF",
+		"sensor":[
+			"LAND_RADAR_T2"
+		],
+		"weapon":[
+			"GCT2:4",
+			"LMT1:8"
+		],
+		"cost":0.52,
+        "latitude":8.444971,   
+        "longitude":-13.245359
+	},
+    {
+		"id": "RINFRA",
+		"type": "CRITICAL",
+        "ent_type":"STATIC",
+		"behavior_mode": 0,
+		"team": "R",
+		"force": "LF",
+		"sensor":[
+		],
+		"weapon":[
+		],
+		"cost":0.97,
+        "latitude":8.458566,   
+        "longitude":-13.229410
+	},
+    {
+		"id": "RARTILL",
+		"type": "ARTILLERY",
+        "ent_type":"STATIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "LF",
+		"sensor":[
+			"LAND_RADAR_T2"
+		],
+		"weapon":[
+			"JMT3:1",
+			"GCT2:5",
+			"LMT1:4"
+		],
+		"cost":0.62,
+        "latitude":8.244948,
+        "longitude": -13.070642
+	},
+	{
+		"id": "RMINE1",
+		"type": "MINE",
+        "ent_type":"STATIC",
+		"behavior_mode": 0,
+		"team": "R",
+		"force": "LF",
+		"sensor":[
+		],
+		"weapon":[
+		],
+		"cost":0.3,
+        "latitude":8.297115, 
+        "longitude": -12.977239
+	},
+	{
+		"id": "RMINE2",
+		"type": "MINE",
+        "ent_type":"STATIC",
+		"behavior_mode": 0,
+		"team": "R",
+		"force": "LF",
+		"sensor":[
+		],
+		"weapon":[
+		],
+		"cost":0.3,
+        "latitude":8.222519, 
+        "longitude":  -12.973810
+	},
+	{
+		"id": "RMINE3",
+		"type": "MINE",
+        "ent_type":"STATIC",
+		"behavior_mode": 0,
+		"team": "R",
+		"force": "SS",
+		"sensor":[
+		],
+		"weapon":[
+		],
+		"cost":0.4,
+        "latitude":8.126324,
+        "longitude":   -13.097665
+	},
+	{
+		"id": "RMINE4",
+		"type": "MINE",
+        "ent_type":"STATIC",
+		"behavior_mode": 0,
+		"team": "R",
+		"force": "SS",
+		"sensor":[
+		],
+		"weapon":[
+		],
+		"cost":0.4,
+        "latitude":7.950655, 
+        "longitude":  -13.096905
+	},
+	{
+		"id": "RMINE5",
+		"type": "MINE",
+        "ent_type":"STATIC",
+		"behavior_mode": 0,
+		"team": "R",
+		"force": "SS",
+		"cost":0.4,
+		"sensor":[
+		],
+		"weapon":[
+		],
+        "latitude":8.313764, 
+        "longitude": -13.548713
+	},
+	{
+		"id": "RMINE6",
+		"type": "MINE",
+        "ent_type":"STATIC",
+		"behavior_mode": 0,
+		"team": "R",
+		"force": "SS",
+		"sensor":[
+		],
+		"weapon":[
+		],
+		"cost":0.4,
+        "latitude":7.744182, 
+        "longitude": -13.552612
+	},
+    {
+		"id": "RFIG1",
+		"type": "FIGHTER",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"cost":0.98,
+		"sensor":[
+			"AIR_RADAR_T2_FIGHTER"
+		],
+		"weapon":[
+			"SMT1:2",
+			"BT2:2"
+		],
+        "latitude":8.523568,  
+        "longitude":-13.757229,
+        "altitude":8000.0
+	},
+    {
+		"id": "RFIG2",
+		"type": "FIGHTER",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"cost":0.98,
+		"sensor":[
+			"AIR_RADAR_T2_FIGHTER"
+		],
+		"weapon":[
+			"SMT1:2",
+			"BT2:2"
+		],
+        "latitude":8.523568,  
+        "longitude":-13.757229,
+        "altitude":8000.0
+	},
+    {
+		"id": "RFIG3",
+		"type": "FIGHTER",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"sensor":[
+			"AIR_RADAR_T2_FIGHTER"
+		],
+		"weapon":[
+			"SMT1:2",
+			"BT2:2"
+		],
+		"cost":0.98,
+        "latitude":7.869261,   
+        "longitude":-13.368834,
+        "altitude":7500.0
+	},
+    {
+		"id": "RFIG4",
+		"type": "FIGHTER",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"cost":0.98,
+		"sensor":[
+			"AIR_RADAR_T2_FIGHTER"
+		],
+		"weapon":[
+			"SMT1:2",
+			"BT2:2"
+		],
+        "latitude":7.869261,   
+        "longitude":-13.368834,
+        "altitude":7500.0
+	},
+    {
+		"id": "RFIG5",
+		"type": "FIGHTER",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"cost":0.98,
+		"sensor":[
+			"AIR_RADAR_T2_FIGHTER"
+		],
+		"weapon":[
+			"SMT1:2",
+			"BT2:2"
+		],
+        "latitude":8.834010,  
+        "longitude":-13.423856 ,
+        "altitude":7500.0
+	},
+    {
+		"id": "RFIG6",
+		"type": "FIGHTER",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"cost":0.98,
+		"sensor":[
+			"AIR_RADAR_T2_FIGHTER"
+		],
+		"weapon":[
+			"SMT1:2",
+			"BT2:2"
+		],
+        "latitude":8.834010,  
+        "longitude":-13.423856 ,
+        "altitude":7500.0
+	},
+    {
+		"id": "RHEL1",
+		"type": "HELI",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"cost":0.78,
+		"sensor":[
+			"AIR_RADAR_T3_NORMAL"
+		],
+		"weapon":[
+			"MT1:2",
+			"ACT2:2"
+		],
+        "latitude":9.051894,  
+        "longitude":-12.626533 ,
+        "altitude":1000.0
+	},
+    {
+		"id": "RUAV1",
+		"type": "UAV",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"sensor":[
+			"AIR_RADAR_T1_DRONE"
+		],
+		"weapon":[
+			"MT1:2"
+		],
+		"cost":0.48,
+        "latitude":8.710540,   
+        "longitude":-12.041401 ,
+        "altitude":1000.0
+	},
+    {
+		"id": "RUAV2",
+		"type": "UAV",
+        "ent_type":"DYNAMIC",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"sensor":[
+			"AIR_RADAR_T1_DRONE"
+		],
+		"weapon":[
+			"MT1:2"
+		],
+		"cost":0.48,
+        "latitude":8.710540,   
+        "longitude":-12.041401 ,
+        "altitude":800.0
+	}
+]

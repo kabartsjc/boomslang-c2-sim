@@ -11,7 +11,7 @@
 		"id": "AIR_RADAR_T2_FIGHTER",
 		"range": 1239000,
 		"domain": "AIR",
-		"precision": 1,
+		"precision": 1.0,
         "reliability": 0.9,
 		"intensity": 0.85
 	},
@@ -45,7 +45,7 @@
 		"id": "LAND_RADAR_T2",
 		"range": 200000,
 		"domain": "LAND",
-		"precision": 1,
+		"precision": 1.0,
         "reliability": 0.9,
 		"intensity": 0.85
 	},
@@ -53,7 +53,7 @@
 		"id": "CYBER_T1",
 		"range": 0,
 		"domain": "CYBER",
-		"precision": 1,
+		"precision": 1.0,
         "reliability": 0.9,
 		"intensity": 0.85
 	},
@@ -93,7 +93,7 @@
 		"id": "SEA_RADAR_T3",
 		"range": 200000,
 		"domain": "SEA",
-		"precision": 1,
+		"precision": 1.0,
         "reliability": 0.9,
 		"intensity": 0.85
 	},
@@ -101,7 +101,7 @@
 		"id": "SAT_RADAR_T1",
 		"range": 0,
 		"domain": "SPACE",
-		"precision": 1,
+		"precision": 1.0,
         "reliability": 0.9,
 		"intensity": 0.85
 	},

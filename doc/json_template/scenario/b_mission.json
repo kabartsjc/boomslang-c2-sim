@@ -21,7 +21,7 @@
                 ]
             },
             {
-                "id":"t2",
+                "id":"t1",
                 "target":"RDD2",
                 "type": "ATTACK",
                 "effectiveness":0.6,
@@ -56,7 +56,7 @@
                 ]
             },
             {
-                "id":"t2",
+                "id":"t1",
                 "target":"RFIG67",
                 "type": "ATTACK",
                 "effectiveness":0.6,
@@ -68,7 +68,7 @@
                 ]
             },
             {
-                "id":"t3",
+                "id":"t1",
                 "target":"RCMD",
                 "type": "ATTACK",
                 "effectiveness":0.6,
@@ -104,7 +104,7 @@
                 ]
             },
             {
-                "id":"t2",
+                "id":"t1",
                 "target":"RGUN",
                 "type": "ATTACK",
                 "effectiveness":0.6,

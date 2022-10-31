@@ -4,56 +4,56 @@
 		"force": "LF",
 		"lethality_factor": 0.0,
 		"resilience_factor": 0.9,
-		"vulnerabilityfactor": 0.5
+		"vulnerability_factor": 0.5
     },
     {
 		"id": "AIRDEFENSE",
 		"force": "LF",
 		"lethality_factor": 0.8,
 		"resilience_factor": 0.8,
-		"vulnerabilityfactor": 0.3
+		"vulnerability_factor": 0.3
         },
    	{
 		"id": "GUNSYSTEM",
 		"force": "LF",
 		"lethality_factor": 0.7,
 		"resilience_factor": 0.8,
-		"vulnerabilityfactor": 0.4
+		"vulnerability_factor": 0.4
     },
     {
 		"id": "CRITICAL",
 		"force": "LF",
 	    "lethality_factor": 0.0,
 		"resilience_factor": 0.3,
-		"vulnerabilityfactor": 1.0
+		"vulnerability_factor": 1.0
     },
     {
 		"id": "ARTILLERY",
 		"force": "LF",
 	    "lethality_factor": 0.8,
 		"resilience_factor": 0.7,
-		"vulnerabilityfactor": 0.5
+		"vulnerability_factor": 0.5
     },
 	{
 		"id": "MINE",
 		"force": "LF",
 	    "lethality_factor": 1.0,
 		"resilience_factor": 0.0,
-		"vulnerabilityfactor": 0.0
+		"vulnerability_factor": 0.0
     },
 	{
 		"id": "CBRANGERSMINE",
 		"force": "CB",
 	    "lethality_factor": 0.5,
 		"resilience_factor": 0.8,
-		"vulnerabilityfactor": 0.3
+		"vulnerability_factor": 0.3
     },
 	{
 		"id": "CIV",
 		"force": "LF",
 	    "lethality_factor": 0.0,
 		"resilience_factor": 0.2,
-		"vulnerabilityfactor": 0.9
+		"vulnerability_factor": 0.9
     }
 
 	   

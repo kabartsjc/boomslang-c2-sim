@@ -1,6 +1,9 @@
-package br.com.gmltec.boomslang.core.geo;
+package br.com.gmltec.boomslangV2.core.utils;
 
 import org.geotools.referencing.GeodeticCalculator;
+
+import br.com.gmltec.boomslangV2.core.geo.Coordinate;
+
 
 public class GeoUtils {
 	
@@ -21,6 +24,23 @@ public class GeoUtils {
 
 		return bearing;
 	}
+	
+	public static boolean isSamePosition(Coordinate currentPos, Coordinate newPos, 
+			double hor_error, double vert_error) {
+		double new_altitude = newPos.getAltitude();
+		
+		double curr_altitude = currentPos.getAltitude();
+		
+		double hor_distance = calculateHorizontalDistanceMeters(currentPos, newPos);
+		double vert_dstance = Math.abs(curr_altitude -new_altitude);
+		
+		if (hor_distance>=hor_error || vert_dstance>=2*vert_error)
+			return true;
+		
+		else 
+			return false;
+	}
+	
 	
 	
 	/**
