@@ -16,6 +16,5 @@ An entity has a type (AIR, LAND, SEA, SPACE, or CYBER). The type has these param
 - **lethality_factor**: represents the capacity to cause significant harm and destruction.
 - **resilience_factor**: represents the process of adapting well in the face of adversity,  threats, or significant sources of stress.
 - **vulnerability_factor**:  is the opposite of resilience; it is the weakness that the presence of a threat can exploit. 
-- **icon_path**: name of icon that represents the entity class.
 
 Depending on the entity type, each can have complementary attributes, like speed, autonomy, climb rate, etc.
