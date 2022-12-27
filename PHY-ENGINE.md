@@ -18,3 +18,8 @@ An entity has a type (AIR, LAND, SEA, SPACE, or CYBER). The type has these param
 - **vulnerability_factor**:  is the opposite of resilience; it is the weakness that the presence of a threat can exploit. 
 
 Depending on the entity type, each can have complementary attributes, like speed, autonomy, climb rate, etc.
+- speed (m/s)
+- autonomy (hours)
+- climb_rate(m/s)
+
+
