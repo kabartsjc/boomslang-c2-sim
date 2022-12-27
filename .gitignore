@@ -30,3 +30,4 @@ hs_err_pid*
 model/boomslang-c2-sim.vpp.bak_000f
 model/boomslang-c2-sim.vpp.bak_001d
 bin/
+*.lck
