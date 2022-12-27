@@ -34,11 +34,11 @@ public class GeoUtils {
 		double hor_distance = calculateHorizontalDistanceMeters(currentPos, newPos);
 		double vert_dstance = Math.abs(curr_altitude -new_altitude);
 		
-		if (hor_distance>=hor_error || vert_dstance>=2*vert_error)
-			return true;
+		if (hor_distance>=hor_error)
+			return false;
 		
 		else 
-			return false;
+			return true;
 	}
 	
 	

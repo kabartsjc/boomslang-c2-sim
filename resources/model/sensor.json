@@ -9,7 +9,7 @@
 	},
 	{
 		"id": "AIR_RADAR_T2_FIGHTER",
-		"range": 1239000,
+		"range": 123900,
 		"domain": "AIR",
 		"precision": 1.0,
         "reliability": 0.9,
@@ -17,7 +17,7 @@
 	},
 	{
 		"id": "AIR_RADAR_T3_EW",
-		"range": 5000000,
+		"range": 500000,
 		"domain": "AIR",
 		"precision": 0.8,
         "reliability": 0.9,
@@ -26,7 +26,7 @@
 	
 	{
 		"id": "AIR_RADAR_T3_NORMAL",
-		"range": 900000,
+		"range": 90000,
 		"domain": "AIR",
 		"precision": 0.8,
         "reliability": 0.9,
@@ -35,7 +35,7 @@
 	
 	{
 		"id": "LAND_RADAR_T1",
-		"range": 400000,
+		"range": 40000,
 		"domain": "LAND",
 		"precision": 0.8,
         "reliability": 0.9,
@@ -43,7 +43,7 @@
 	},
 	{
 		"id": "LAND_RADAR_T2",
-		"range": 200000,
+		"range": 20000,
 		"domain": "LAND",
 		"precision": 1.0,
         "reliability": 0.9,

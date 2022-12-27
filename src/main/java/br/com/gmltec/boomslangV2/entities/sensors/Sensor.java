@@ -1,5 +1,8 @@
 package br.com.gmltec.boomslangV2.entities.sensors;
 
+import java.util.Random;
+
+import br.com.gmltec.boomslangV2.core.utils.GeoUtils;
 import br.com.gmltec.boomslangV2.entities.IEntity;
 
 public class Sensor implements ISensor {
@@ -9,6 +12,7 @@ public class Sensor implements ISensor {
 	private double precision;
 	private double reliability;
 	private double intensity;
+	private Random rand;
 	
 	public Sensor(String id, String domain, double range, double precision, double reliability, double intensity) {
 		super();
@@ -18,6 +22,7 @@ public class Sensor implements ISensor {
 		this.precision = precision;
 		this.reliability = reliability;
 		this.intensity = intensity;
+		rand = new Random(System.currentTimeMillis());
 	}
 
 	public String getId() {
@@ -45,8 +50,14 @@ public class Sensor implements ISensor {
 	}
 
 	@Override
-	public boolean isSense(IEntity ent) {
-		// TODO Auto-generated method stub
+	public boolean isSense(IEntity ent, IEntity target) {
+		double distance = GeoUtils.calculateHorizontalDistanceMeters(ent.getCurrentPosition(), target.getCurrentPosition());
+		double sense = precision*intensity*range*rand.nextDouble();
+		
+		if (sense>distance) {
+			return true;
+		}
+		
 		return false;
 	}
 

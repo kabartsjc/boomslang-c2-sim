@@ -15,10 +15,37 @@
 			"ACT2:2"
 		],
 		"cost":0.98,
-        "latitude":8.814209,   
-        "longitude":-14.103655,
-        "altitude":7500.0
-	},
+        "latitude":9.114209,   
+        "longitude":-24.103655,
+        "altitude":7500.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"RDD1",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                    "7.583233, -13.673335"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            },
+            {
+                "id":"t2",
+                "target":"RDD2",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
+    },
     {
 		"id": "BFIG2",
 		"type": "FIGHTER",
@@ -35,10 +62,37 @@
 			"ACT2:2"
 		],
 		"cost":0.98,
-        "latitude":8.814209,   
-        "longitude":-14.103655,
-        "altitude":7500.0
-	},
+        "latitude":9.114209,   
+        "longitude":-24.103655,
+        "altitude":7500.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"RDD1",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                    "7.583233, -13.673335"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            },
+            {
+                "id":"t2",
+                "target":"RDD2",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
+    },
     {
 		"id": "BFIG3",
 		"type": "FIGHTER",
@@ -55,9 +109,48 @@
 			"ACT2:2"
 		],
 		"cost":0.98,
-        "latitude":7.811790,  
-        "longitude":-14.026561,
-        "altitude":7500.0
+        "latitude":10.114209,   
+        "longitude":-23.103655,
+        "altitude":7500.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"RFIG6",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                  
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            },
+            {
+                "id":"t2",
+                "target":"RFIG67",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            },
+            {
+                "id":"t3",
+                "target":"RCMD",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BFIG4",
@@ -75,9 +168,48 @@
 			"ACT2:2"
 		],
 		"cost":0.98,
-        "latitude":7.811790,  
-        "longitude":-14.026561,
-        "altitude":7500.0
+        "latitude":10.114209,   
+        "longitude":-23.103655,
+        "altitude":7500.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"RARTILL",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                  
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            },
+            {
+                "id":"t2",
+                "target":"RINFRA",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            },
+            {
+                "id":"t3",
+                "target":"RCMD",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BFIG5",
@@ -95,9 +227,36 @@
 			"BT2:4",
 			"ACT2:2"
 		],
-		"latitude":7.687760, 
-        "longitude":-13.563639,
-        "altitude":7500.0
+		"latitude":11.687760, 
+        "longitude":-20.563639,
+        "altitude":7500.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"RADEF",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                  
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            },
+            {
+                "id":"t2",
+                "target":"RGUN",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BFIG6",
@@ -115,9 +274,36 @@
 			"BT2:4",
 			"ACT2:2"
 		],
-		"latitude":7.687760, 
-        "longitude":-13.563639,
-        "altitude":7500.0
+		"latitude":12.687760, 
+        "longitude":-20.563639,
+        "altitude":7500.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"RADEF",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                  
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            },
+            {
+                "id":"t2",
+                "target":"RGUN",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BAEW1",
@@ -134,9 +320,10 @@
 			"SMT1:2",
 			"JMT1:1"
 		],
-		"latitude":8.624926, 
-        "longitude":-14.670331,
-        "altitude":7500.0
+		"latitude":10.687760, 
+        "longitude":-21.563639,
+        "altitude":7500.0,
+         "task":[]
 	},
     {
 		"id": "BUAV1",
@@ -152,9 +339,27 @@
 			"MT1:2"
 		],
 		"cost":0.48,
-        "latitude":9.146634,    
-        "longitude":-12.646775 ,
-        "altitude":1200.0
+        "latitude":11.146634,    
+        "longitude":-20.646775 ,
+        "altitude":1200.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "9.059224, -10.043353",
+                    "7.206878, -11.390927",
+                    "7.152454, -11.646360"
+                  
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BUAV2",
@@ -170,9 +375,27 @@
 			"MT1:2"
 		],
 		"cost":0.48,
-        "latitude":9.146634,    
-        "longitude":-12.646775 ,
-        "altitude":900.0
+        "latitude":10.146634,    
+        "longitude":-22.646775 ,
+        "altitude":900.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "9.059224, -10.043353",
+                    "7.206878, -11.390927",
+                    "7.152454, -11.646360"
+                  
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BUAV3",
@@ -188,9 +411,26 @@
 		"weapon":[
 			"MT1:2"
 		],
-		"latitude":8.509857, 
-        "longitude":-11.9579555 ,
-        "altitude":900.0
+        "latitude":11.146634,    
+        "longitude":-20.646775 ,
+        "altitude":900.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "7.206878, -11.390927",
+                    "7.152454, -11.646360",
+                    "9.059224, -10.043353"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BUAV4",
@@ -206,9 +446,26 @@
 			"MT1:2"
 		],
 		"cost":0.48,
-        "latitude":8.509857, 
-        "longitude":-11.9579555 ,
-        "altitude":1200.0
+        "latitude":10.146634,    
+        "longitude":-21.646775 ,
+        "altitude":1200.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "7.206878, -11.390927",
+                    "7.152454, -11.646360",
+                    "9.059224, -10.043353"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BUAV5",
@@ -224,9 +481,26 @@
 			"MT1:2"
 		],
 		"cost":0.48,
-        "latitude":8.044568, 
-        "longitude":-11.491076 ,
-        "altitude":1200.0
+        "latitude":9.146634,    
+        "longitude":-20.646775 ,
+        "altitude":1200.0,
+         "task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "7.402513, -14.321419",
+                    "6.027250, -10.586307",
+                    "7.359485, -9.935410"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BUAV6",
@@ -242,9 +516,26 @@
 			"MT1:2"
 		],
 		"cost":0.48,
-        "latitude":8.044568, 
-        "longitude":-11.491076 ,
-        "altitude":900.0
+        "latitude":11.146634,    
+        "longitude":-22.646775 ,
+        "altitude":900.0,
+         "task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "7.402513, -14.321419",
+                    "6.027250, -10.586307",
+                    "7.359485, -9.935410"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BHEL1",
@@ -261,9 +552,25 @@
 			"MT1:2",
 			"ACT2:2"
 		],
-		"latitude":8.105845,  
-        "longitude":-11.814216 ,
-        "altitude":1000.0
+		"latitude":10.214466,   
+        "longitude":-12.450207 ,
+        "altitude":1000.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"RARTILL",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB",
+                    "CANNON"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BHEL2",
@@ -280,9 +587,25 @@
 			"ACT2:2"
 		],
 		"cost":0.78,
-        "latitude":7.813746, 
-        "longitude":-11.869354,
-        "altitude":1000.0
+		"latitude":10.214466,   
+        "longitude":-11.450207 ,
+        "altitude":1000.0,
+         "task":[
+            {
+                "id":"t1",
+                "target":"RADEF",
+                "type": "ATTACK",
+                "effectiveness":0.55,
+                "route":[
+                
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB",
+                    "CANNON"
+                ]
+            }
+        ]
 	},
     {
 		"id": "BCMD1",
@@ -298,8 +621,10 @@
 			
 		],
 		"cost":1.0,
-        "latitude":7.330945, 
-        "longitude":-12.186058
+        "latitude":9.956566, 
+        "longitude":-13.004196,
+        "altitude":0.0,
+        "task":[]
 	},
     
     {
@@ -319,8 +644,10 @@
 			"GCT2:2",
 			"JMT3:1"
 		],
-        "latitude":7.456720,
-        "longitude": -12.385694
+        "latitude":9.856566, 
+        "longitude":-13.004196,
+        "altitude":0.0,
+        "task":[]
 	},
     {
 		"id": "BAT1",
@@ -337,8 +664,10 @@
 			"LMT1:4",
 			"GCT2:2"
 		],
-        "latitude":7.814992, 
-        "longitude": -12.488206
+        "latitude":9.956566, 
+        "longitude":-13.994196,
+        "altitude":0.0,
+        "task":[]
 	},
     {
 		"id": "ART1",
@@ -356,8 +685,10 @@
 			"GCT2:2"
 		],
 		"cost":0.82,
-        "latitude":7.757380, 
-        "longitude": -11.892241
+        "latitude":9.956566, 
+        "longitude":-12.004196,
+        "altitude":0.0,
+        "task":[]
 	},
     {
 		"id": "BADEF2",
@@ -376,8 +707,10 @@
 			"JMT3:1"
 		],
 		"cost":0.92,
-        "latitude":7.116776, 
-        "longitude": -10.285943
+        "latitude":10.040413, 
+        "longitude": -11.668832,
+        "altitude":0.0,
+        "task":[]
 	},
     {
 		"id": "BCIV1",
@@ -391,8 +724,10 @@
 		"weapon":[
 		],
 		"cost":0.4,
-        "latitude":7.119776, 
-        "longitude": -10.286943
+        "latitude":10.240413, 
+        "longitude": -11.998832,
+        "altitude":0.0,
+        "task":[]
 	},
     {
 		"id": "BSF1",
@@ -407,7 +742,22 @@
 		],
 		"cost":0.7,
         "latitude":8.249140, 
-        "longitude":  -12.292102
+        "longitude":  -12.292102,
+        "altitude":0.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"RINFRA",
+                "type": "ATTACK",
+                "effectiveness":0.55,
+                "route":[
+                
+                ],
+                "required_weapon":[
+                    
+                ]
+            }
+        ]
 	},
     {
 		"id": "BSPY1",
@@ -422,7 +772,22 @@
 		],
 		"cost":0.9,
         "latitude":8.449140, 
-        "longitude":  -12.292102
+        "longitude":  -12.292102,
+        "altitude":0.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"RARTILL",
+                "type": "ATTACK",
+                "effectiveness":0.55,
+                "route":[
+                
+                ],
+                "required_weapon":[
+                    
+                ]
+            }
+        ]
 	},
     
     {
@@ -441,8 +806,25 @@
 			"JMT2:1"
 		],
 		"cost":1.0,
-        "latitude":7.054588,  
-        "longitude":  -12.852476
+        "latitude":9.886237, 
+        "longitude":  -18.053635,
+        "altitude":0.0,
+        "task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "6.245083, -20.177556",
+                    "9.555264, -16.561659",
+                    "3.814387, -15.123178"
+                ],
+                "required_weapon":[
+                    
+                ]
+            }
+        ]
 	},
     {
 		"id": "BDET1",
@@ -460,8 +842,23 @@
 			"JMT2:1"
 		],
 		"cost":0.92,
-        "latitude":8.034409, 
-        "longitude":  -14.989725 
+        "latitude":7.956496,
+        "longitude":   -17.708385,
+        "altitude":0.0,
+          "task":[
+            {
+                "id":"t1",
+                "target":"RCMD",
+                "type": "ATTACK",
+                "effectiveness":0.5,
+                "route":[
+                    
+                ],
+                "required_weapon":[
+                    
+                ]
+            }
+        ]
 	},
     {
 		"id": "BAEROC1",
@@ -478,8 +875,10 @@
 			"JMT2:1"
 		],
 		"cost":1.0,
-        "latitude":7.844992, 
-        "longitude":  -15.778132
+        "latitude":8.156496,
+        "longitude":   -17.708385,
+        "altitude":0.0,
+        "task":[]
 	},
     {
 		"id": "BCRUIS1",
@@ -497,7 +896,9 @@
 			"JMT2:1"
 		],
 		"cost":0.7,
-        "latitude":7.484038,
-        "longitude":-15.124679
+        "latitude":7.256496,
+        "longitude":   -17.708385,
+        "altitude":0.0,
+        "task":[]
 	}
 ]

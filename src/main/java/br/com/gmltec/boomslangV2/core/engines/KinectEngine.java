@@ -1,4 +1,4 @@
-package br.com.gmltec.boomslangV2.core.movemment;
+package br.com.gmltec.boomslangV2.core.engines;
 
 import br.com.gmltec.boomslangV2.core.geo.Coordinate;
 import br.com.gmltec.boomslangV2.core.utils.GeoUtils;
@@ -16,7 +16,7 @@ public class KinectEngine {
 	private static final double ARMY_HOR_ERR = 300;
 	private static final double ARMY_VERT_ERR = 304; // 100ft
 	
-	private static double horizontalErrorDefined(String force) {
+	public static double horizontalErrorDefined(String force) {
 		double hor_error = 0;
 		
 		if (force.equals("AF")){
@@ -39,7 +39,7 @@ public class KinectEngine {
 		
 	}
 	
-	private static double verticalErrorDefined(String force) {
+	public static double verticalErrorDefined(String force) {
 		double vert_error = 0;
 		
 		if (force.equals("AF")){
@@ -62,7 +62,7 @@ public class KinectEngine {
 		
 	}
 	
-	private static Coordinate move(IEntity entity, long update_rate) {
+	public static Coordinate move(IEntity entity,long update_rate) {
 		double distance_mt_vertical = 0;
 		double distance_mt_horiz = 0;
 		double vert_difference = entity.getTargetPosition().getAltitude()-entity.getCurrentPosition().getAltitude();
@@ -102,6 +102,8 @@ public class KinectEngine {
 	};
 	
 	
+
+	
 	public static void update(IEntity entity, long update_rate) {
 		double hor_error =horizontalErrorDefined(entity.getForce());
 		double vert_error = verticalErrorDefined(entity.getForce());
@@ -112,42 +114,41 @@ public class KinectEngine {
 		else if (GeoUtils.isSamePosition(entity.getCurrentPosition(), 
 				entity.getTargetPosition(), hor_error, vert_error)) {
 			
-			//is the same position
-			if (entity.getStatus()==STATUS.RETURN)
-				entity.setStatus(STATUS.END);
-			
-			if (entity.hasMoreWaypoints()==false) {
-				if (entity.hasMoreTask()==false){
-					entity.setStatus(STATUS.RETURN);
-					entity.setTargetPosition(entity.getInitialPosition());
-					Coordinate newPosition = move(entity, update_rate);
-					entity.setCurrentPosition(newPosition);
-				}
-				else {
-					entity.nextTask();
-					Coordinate newPosition = move(entity, update_rate);
-					entity.setCurrentPosition(newPosition);
-				}
-			}
-			else {
+			if (entity.hasMoreWaypoints()) {
 				//new waypoint
 				entity.nextWaypoint();
 				Coordinate newPosition = move(entity, update_rate);
+				if (newPosition!=null)
+					entity.setCurrentPosition(newPosition);
+				
+			}
+			
+			else if (entity.hasMoreTask()) {
+				entity.nextTask();
+				Coordinate newPosition = move(entity, update_rate);
+				if (newPosition!=null)
+					entity.setCurrentPosition(newPosition);
+			}
+			
+			else if (entity.getStatus()==STATUS.RETURN) {
+				System.out.println(entity.getId()+ "is end");
+				entity.setStatus(STATUS.END);
+			}
+			
+			else {
+				System.out.println(entity.getId()+ "is returning");
+				entity.setStatus(STATUS.RETURN);
+				entity.setTargetPosition(entity.getInitialPosition());
+				Coordinate newPosition = move(entity, update_rate);
 				entity.setCurrentPosition(newPosition);
 			}
-		}
-		
-		else {
-			Coordinate newPosition = move(entity, update_rate);
-			entity.setCurrentPosition(newPosition);
-			
 		}
 		
 		System.out.println(entity.getId()+":"+entity.getCurrentPosition().getLatitude()
 				+","+entity.getCurrentPosition().getLongitude()
 				+","+entity.getCurrentPosition().getAltitude());
 		
-	};
-	
+	}
 
+	
 }

@@ -1,24 +1,24 @@
 package br.com.gmltec.boomslangV2.core.infra.messages;
 
-import java.util.Map;
+import java.util.List;
 
 import org.json.simple.JSONObject;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import br.com.gmltec.boomslangV2.plan.IMission;
+import br.com.gmltec.boomslangV2.entities.IEntity;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class UpdateScenarioMessage extends Message {
+public class UpdateMovementMessage extends Message {
 	private long simu_time;
 	private long real_time;
-	private Map<String, IMission> missions;
+	private List<IEntity> entityL;
 	
 
-	public UpdateScenarioMessage(long simu_time, long real_time,Map<String, IMission> missions) {
+	public UpdateMovementMessage(long simu_time, long real_time,List<IEntity> entityL) {
 		this.real_time = real_time;
 		this.simu_time = simu_time;
-		this.missions=missions;
+		this.entityL=entityL;
 	}
 
 	@Override
@@ -40,8 +40,8 @@ public class UpdateScenarioMessage extends Message {
 		return real_time;
 	}
 
-	public Map<String, IMission> getMissions() {
-		return missions;
+	public List<IEntity> getEntities() {
+		return entityL;
 	}
 	
 	

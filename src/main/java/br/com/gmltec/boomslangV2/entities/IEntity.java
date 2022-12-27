@@ -11,7 +11,7 @@ import br.com.gmltec.boomslangV2.plan.ITask;
 public interface IEntity {
 
 	enum STATUS {
-		INIT, RETURN, END
+		INIT, RETURN, FAILED, DESTROYED, END
 	}
 
 	public void init();
@@ -54,10 +54,12 @@ public interface IEntity {
 
 	public void addWeapon(IWeapon weapon, int qtd);
 
-	public void decrementWeapon(IWeapon weapon);
+	public int decrementWeapon(IWeapon weapon);
+	
+	public int getWeaponQuantity(IWeapon weapon);
 
 	public List<IWeapon> getWeaponList();
-
+	
 	public void addTask(ITask task);
 
 	public List<ITask> getTasks();
@@ -69,4 +71,8 @@ public interface IEntity {
 	public boolean hasMoreTask();
 
 	public void nextTask();
+	
+	public ITask getCurrentTask();
+	
+	public void finishMission();
 }

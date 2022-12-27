@@ -8,7 +8,7 @@ import br.com.gmltec.boomslangV2.core.infra.messages.Message;
 public abstract class Channel {
 	
 	public enum TOPIC {
-		SCENARIO
+		SCENARIO, EFFECT
 	}
 	
 	protected ConcurrentHashMap<TOPIC, List<Subscriber>> subscriberLists;

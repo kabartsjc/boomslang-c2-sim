@@ -2,7 +2,7 @@
 	{
 		"id": "MT1",
 		"domain": "AIR",
-		"range": 18000,
+		"range": 180000,
 		"type": "MISSILE",
 		"precision": 0.8,
         "reliability": 0.9,
@@ -12,7 +12,7 @@
 	{
 		"id": "MT2",
 		"type": "MISSILE",
-		"range": 18000,
+		"range": 180000,
 		"domain": "AIR",
 		"precision": 1.0,
 		"intensity": 0.9,
@@ -21,7 +21,7 @@
 	{
 		"id": "MT3",
 		"type": "MISSILE",
-		"range": 20000,
+		"range": 200000,
 		"domain": "AIR",
 		"precision": 1.0,
 		"intensity": 0.75,
@@ -30,7 +30,7 @@
 	{
 		"id": "LMT1",
 		"type": "MISSILE",
-		"range": 4000,
+		"range": 40000,
 		"domain": "LAND",
 		"precision": 0.9,
 		"intensity": 1.0,
@@ -39,7 +39,7 @@
 	{
 		"id": "LMT2",
 		"type": "MISSILE",
-		"range": 4000,
+		"range": 40000,
 		"domain": "SEA",
 		"precision": 0.9,
 		"intensity": 0.7,

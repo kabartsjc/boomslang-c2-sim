@@ -7,11 +7,12 @@ import br.com.gmltec.boomslangV2.core.geo.Coordinate;
 import br.com.gmltec.boomslangV2.entities.IEntity;
 
 public class Task implements ITask {
+	
 	protected String id;
 	protected IEntity target;
 	protected double effectiveness;
 	protected String type;
-	
+	protected STATUS status;
 	protected List<Coordinate>route;
 	
 	protected boolean is_time_on_target;
@@ -33,6 +34,15 @@ public class Task implements ITask {
 	public String getId() {
 		return id;
 	}
+	
+	public STATUS getStatus() {
+		return status;
+	}
+	
+	public void setStatus(STATUS status) {
+		this.status=status;
+	}
+	
 
 	public IEntity getTarget() {
 		return target;

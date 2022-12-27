@@ -22,9 +22,7 @@ import br.com.gmltec.boomslangV2.entities.types.MobilityEntity;
 import br.com.gmltec.boomslangV2.entities.types.StaticEntity;
 import br.com.gmltec.boomslangV2.entities.weapons.IWeapon;
 import br.com.gmltec.boomslangV2.entities.weapons.Weapon;
-import br.com.gmltec.boomslangV2.plan.IMission;
 import br.com.gmltec.boomslangV2.plan.ITask;
-import br.com.gmltec.boomslangV2.plan.Mission;
 import br.com.gmltec.boomslangV2.plan.Task;
 
 public class JsonUtils {
@@ -192,12 +190,14 @@ public class JsonUtils {
 				if (jo.get("altitude") != null)
 					altitude = (double) jo.get("altitude");
 				Coordinate currentPosition = new Coordinate(latitude, longitude, altitude);
+				Coordinate initPosition = new Coordinate(latitude, longitude, altitude);
 
-				String ent_type = (String) jo.get("ent_type");
+				//String ent_type = (String) jo.get("ent_type");
 				Map<String, IEntityType> entityTypeDict = loadEntityTypes();
-				IEntityType entType = entityTypeDict.get(ent_type);
+				IEntityType entType = entityTypeDict.get(type);
 
-				Entity entity = new Entity(id, behavior_mode, team, force, cost, type, entType, currentPosition);
+				IEntity entity = new Entity(id, behavior_mode, team, force, cost, type, entType, currentPosition,
+						initPosition);
 
 				Map<String, ISensor> sensorMap = loadSensors();
 				@SuppressWarnings("unchecked")
@@ -234,42 +234,27 @@ public class JsonUtils {
 	}
 
 	@SuppressWarnings("unchecked")
-	public static Map<String, IMission> loadMissions(String team_name, Map<String, 
-			IEntity> entityDB ) {
-		Map<String, IMission> missionDict = new ConcurrentHashMap<>();
-		String missionJson = null;
-		Map<String, IEntity> targetMap = null;
+	public static void loadTasks(String team_name, Map<String, IEntity> entL, Map<String, IEntity> targetMap) {
+		String entityJson = null;
 
 		if (team_name.equals("B")) {
-			missionJson = Variables.B_MISSION_FILE;
-			targetMap = loadEntities("R");
+			entityJson = Variables.B_ENTITY_FILE;
 		} else if (team_name.equals("R")) {
-			missionJson = Variables.R_MISSION_FILE;
-			targetMap = loadEntities("B");
+			entityJson = Variables.R_ENTITY_FILE;
 		} else {
-			missionJson = Variables.G_MISSION_FILE;
-			targetMap = new ConcurrentHashMap<>();
+			entityJson = Variables.G_ENTITY_FILE;
 		}
 
 		try {
-			Object obj = new JSONParser().parse(new FileReader(missionJson));
+			Object obj = new JSONParser().parse(new FileReader(entityJson));
 
 			JSONArray joArr = (JSONArray) obj;
 
 			for (int i = 0; i < joArr.size(); i++) {
 				JSONObject jo = (JSONObject) joArr.get(i);
 				String id = (String) jo.get("id");
-				double effectiveness = (double) jo.get("effectiveness");
-
-				List<String> entArr = (ArrayList<String>) jo.get("node_id");
-				List<IEntity> performers = new ArrayList<>();
-				for (int j = 0; j < entArr.size(); j++) {
-					String entityStr = entArr.get(j);
-					IEntity entity = (IEntity) entityDB.get(entityStr);
-					performers.add(entity);
-				}
-
-				Mission mission = new Mission(id, effectiveness, performers);
+				IEntity entity = entL.get(id);
+				
 				List<JSONArray> taskList = (JSONArray) jo.get("task");
 				for (int k = 0; k < taskList.size(); k++) {
 					Object objJ = taskList.get(k);
@@ -282,7 +267,7 @@ public class JsonUtils {
 
 					double t_effectiveness = (double) jot.get("effectiveness");
 
-					Task task = new Task(tid, target, task_type, t_effectiveness);
+					ITask task = new Task(tid, target, task_type, t_effectiveness);
 
 					List<String> routeArr = (ArrayList<String>) jot.get("route");
 					for (int z = 0; z < routeArr.size(); z++) {
@@ -307,71 +292,56 @@ public class JsonUtils {
 						String sensorName = rSensorArr.get(z);
 						task.addRequiredSensor(sensorName);
 					}
-
-					for (int w = 0; w < mission.getPerformers().size(); w++) {
-						Entity ent = (Entity) mission.getPerformers().get(w);
-						ent.addTask(task);
-					}
+					
+					entity.addTask(task);
 				}
-
-				missionDict.put(id, mission);
-
+			
 			}
-
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
 
-		return missionDict;
 	}
+
 	
 	public static Object[] loadServerParams() {
-		Object[] server_params= null;
+		Object[] server_params = null;
 		try {
 			String exeFile = Variables.EXE_FILE;
 			Object obj = new JSONParser().parse(new FileReader(exeFile));
 
 			JSONObject jo = (JSONObject) obj;
-			
+
 			double central_lat = (double) jo.get("central_lat");
 			double central_long = (double) jo.get("central_long");
 			Coordinate map_center = new Coordinate(central_lat, central_long, 0);
 			String simu_addr = (String) jo.get("sim_addr");
-			int simu_port = (int) ((long)  jo.get("sim_port"));
-			
-			server_params= new Object[3];
+			int simu_port = (int) ((long) jo.get("sim_port"));
+
+			server_params = new Object[3];
 			server_params[0] = simu_addr;
 			server_params[1] = simu_port;
 			server_params[2] = map_center;
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
-		
+
 		return server_params;
 	}
 
+	/*
+	 * public static void main(String args[]) { Map<String, IMission> missions =
+	 * loadMissions("B"); List<IMission> missionL = new ArrayList<IMission>();
+	 * missionL.addAll(missions.values());
+	 * 
+	 * for (IMission missionI : missionL) { Mission mission = (Mission) missionI;
+	 * System.out.println("mission - " + mission.getId()); for (IEntity ent :
+	 * mission.getPerformers()) { Entity entImpl = (Entity) ent;
+	 * System.out.println(entImpl.getId()); for (ITask task : entImpl.getTasks()) {
+	 * Task taskImpl = (Task) task; System.out.println(taskImpl.getRoutes().size() +
+	 * "routes"); ; } } System.out.println("$$$$$$");
+	 * 
+	 * } }
+	 */
 
-	/*public static void main(String args[]) {
-		Map<String, IMission> missions = loadMissions("B");
-		List<IMission> missionL = new ArrayList<IMission>();
-		missionL.addAll(missions.values());
-
-		for (IMission missionI : missionL) {
-			Mission mission = (Mission) missionI;
-			System.out.println("mission - " + mission.getId());
-			for (IEntity ent : mission.getPerformers()) {
-				Entity entImpl = (Entity) ent;
-				System.out.println(entImpl.getId());
-				for (ITask task : entImpl.getTasks()) {
-					Task taskImpl = (Task) task;
-					System.out.println(taskImpl.getRoutes().size() + "routes");
-					;
-				}
-			}
-			System.out.println("$$$$$$");
-
-		}
-	}*/
-
-	
 }

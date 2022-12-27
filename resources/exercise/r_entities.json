@@ -15,7 +15,8 @@
 		"cost":0.72,
         "latitude":8.452794,  
         "longitude":-13.275190,
-        "altitude":0.0
+        "altitude":0.0,
+		"task":[]
 	},
     {
 		"id": "RARMY2",
@@ -33,7 +34,8 @@
 		"cost":0.62,
         "latitude":8.250958, 
         "longitude":-13.03209,
-        "altitude":0.0
+        "altitude":0.0,
+		"task":[]
 	},
 	{
 		"id": "RDD1",
@@ -54,7 +56,8 @@
 		"cost":0.92,
         "latitude":8.198622, 
         "longitude":-13.584436,
-        "altitude":0.0
+        "altitude":0.0,
+		"task":[]
 	},
 	{
 		"id": "RDD2",
@@ -75,7 +78,23 @@
 		"cost":0.92,
         "latitude":8.657439, 
         "longitude":-13.723240,
-        "altitude":0.0
+        "altitude":0.0,
+		"task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "6.245083, -20.177556",
+                    "9.555264, -16.561659",
+                    "3.814387, -15.123178"
+                ],
+                "required_weapon":[
+                    
+                ]
+            }
+        ]
 	},
     {
 		"id": "RCMD",
@@ -90,7 +109,9 @@
 		],
 		"cost":1.0,
         "latitude":8.488668, 
-        "longitude":-13.276401
+        "longitude":-13.276401,
+        "altitude":0.0,
+		"task":[]
 	},
     {
 		"id": "RADEF",
@@ -109,7 +130,9 @@
 		],
 		"cost":0.92,
         "latitude":8.452794,  
-        "longitude":-13.275190
+        "longitude":-13.275190,
+        "altitude":0.0,
+		"task":[]
 	},
    	{
 		"id": "RGUN",
@@ -127,7 +150,9 @@
 		],
 		"cost":0.52,
         "latitude":8.444971,   
-        "longitude":-13.245359
+        "longitude":-13.245359,
+        "altitude":0.0,
+		"task":[]
 	},
     {
 		"id": "RINFRA",
@@ -142,7 +167,9 @@
 		],
 		"cost":0.97,
         "latitude":8.458566,   
-        "longitude":-13.229410
+        "longitude":-13.229410,
+        "altitude":0.0,
+		"task":[]
 	},
     {
 		"id": "RARTILL",
@@ -161,7 +188,9 @@
 		],
 		"cost":0.62,
         "latitude":8.244948,
-        "longitude": -13.070642
+        "longitude": -13.070642,
+        "altitude":0.0,
+		"task":[]
 	},
 	{
 		"id": "RMINE1",
@@ -173,10 +202,13 @@
 		"sensor":[
 		],
 		"weapon":[
+			"LBT1:1"
 		],
 		"cost":0.3,
         "latitude":8.297115, 
-        "longitude": -12.977239
+        "longitude": -12.977239,
+        "altitude":0.0,
+		"task":[]
 	},
 	{
 		"id": "RMINE2",
@@ -188,10 +220,13 @@
 		"sensor":[
 		],
 		"weapon":[
+			"LBT1:1"
 		],
 		"cost":0.3,
         "latitude":8.222519, 
-        "longitude":  -12.973810
+        "longitude":  -12.973810,
+        "altitude":0.0,
+		"task":[]
 	},
 	{
 		"id": "RMINE3",
@@ -203,10 +238,13 @@
 		"sensor":[
 		],
 		"weapon":[
+			"LBT1:1"
 		],
 		"cost":0.4,
         "latitude":8.126324,
-        "longitude":   -13.097665
+        "longitude":   -13.097665,
+        "altitude":0.0,
+		"task":[]
 	},
 	{
 		"id": "RMINE4",
@@ -218,10 +256,13 @@
 		"sensor":[
 		],
 		"weapon":[
+			"LBT1:1"
 		],
 		"cost":0.4,
         "latitude":7.950655, 
-        "longitude":  -13.096905
+        "longitude":  -13.096905,
+        "altitude":0.0,
+		"task":[]
 	},
 	{
 		"id": "RMINE5",
@@ -234,9 +275,12 @@
 		"sensor":[
 		],
 		"weapon":[
+			"LBT1:1"
 		],
         "latitude":8.313764, 
-        "longitude": -13.548713
+        "longitude": -13.548713,
+        "altitude":0.0,
+		"task":[]
 	},
 	{
 		"id": "RMINE6",
@@ -248,10 +292,13 @@
 		"sensor":[
 		],
 		"weapon":[
+			"LBT1:1"
 		],
 		"cost":0.4,
         "latitude":7.744182, 
-        "longitude": -13.552612
+        "longitude": -13.552612,
+        "altitude":0.0,
+		"task":[]
 	},
     {
 		"id": "RFIG1",
@@ -270,7 +317,22 @@
 		],
         "latitude":8.523568,  
         "longitude":-13.757229,
-        "altitude":8000.0
+        "altitude":8000.0,
+         "task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "7.995796, -14.022978",
+                    "8.722812, -13.183272",
+                    "8.391209, -12.965699"
+                ],
+                "required_weapon":[
+                ]
+            }
+        ]
 	},
     {
 		"id": "RFIG2",
@@ -289,7 +351,22 @@
 		],
         "latitude":8.523568,  
         "longitude":-13.757229,
-        "altitude":8000.0
+        "altitude":8000.0,
+         "task":[
+            {
+                "id":"t1",
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "7.995796, -14.022978",
+                    "8.722812, -13.183272",
+                    "8.391209, -12.965699"
+                ],
+                "required_weapon":[
+                ]
+            }
+        ]
 	},
     {
 		"id": "RFIG3",
@@ -308,7 +385,21 @@
 		"cost":0.98,
         "latitude":7.869261,   
         "longitude":-13.368834,
-        "altitude":7500.0
+        "altitude":7500.0,
+         "task":[
+            {
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "8.746431, -13.142182",
+                    "8.571011, -11.155843",
+                    "7.009972, -10.391161"
+                ],
+                "required_weapon":[
+                ]
+            }
+        ]
 	},
     {
 		"id": "RFIG4",
@@ -327,7 +418,21 @@
 		],
         "latitude":7.869261,   
         "longitude":-13.368834,
-        "altitude":7500.0
+        "altitude":7500.0,
+         "task":[
+            {
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "8.746431, -13.142182",
+                    "8.571011, -11.155843",
+                    "7.009972, -10.391161"
+                ],
+                "required_weapon":[
+                ]
+            }
+        ]
 	},
     {
 		"id": "RFIG5",
@@ -346,7 +451,21 @@
 		],
         "latitude":8.834010,  
         "longitude":-13.423856 ,
-        "altitude":7500.0
+        "altitude":7500.0,
+         "task":[
+            {
+                "target":"BCMD1",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                    "7.653842, -11.532073"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "RFIG6",
@@ -365,7 +484,21 @@
 		],
         "latitude":8.834010,  
         "longitude":-13.423856 ,
-        "altitude":7500.0
+        "altitude":7500.0,
+         "task":[
+            {
+                "target":"BCMD1",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                    "7.653842, -11.532073"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "RHEL1",
@@ -384,7 +517,22 @@
 		],
         "latitude":9.051894,  
         "longitude":-12.626533 ,
-        "altitude":1000.0
+        "altitude":1000.0,
+        "task":[
+            {
+                "target":"",
+                "type": "PATROL",
+                "effectiveness":0.65,
+                "route":[
+                    "8.617520, -12.945881",
+                    "8.159744, -12.911140",
+                    "8.716687, -11.634439"
+                ],
+                "required_weapon":[
+                   
+                ]
+            }
+        ]
 	},
     {
 		"id": "RUAV1",
@@ -402,7 +550,22 @@
 		"cost":0.48,
         "latitude":8.710540,   
         "longitude":-12.041401 ,
-        "altitude":1000.0
+        "altitude":1000.0,
+        "task":[
+            {
+                "target":"BAT1",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                    "9.041550, -11.709092",
+                    "8.136002, -11.020972"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	},
     {
 		"id": "RUAV2",
@@ -420,6 +583,21 @@
 		"cost":0.48,
         "latitude":8.710540,   
         "longitude":-12.041401 ,
-        "altitude":800.0
+        "altitude":800.0,
+        "task":[
+            {
+                "target":"BAT1",
+                "type": "ATTACK",
+                "effectiveness":0.65,
+                "route":[
+                    "9.041550, -11.709092",
+                    "8.136002, -11.020972"
+                ],
+                "required_weapon":[
+                    "MISSILE",
+                    "BOMB"
+                ]
+            }
+        ]
 	}
 ]

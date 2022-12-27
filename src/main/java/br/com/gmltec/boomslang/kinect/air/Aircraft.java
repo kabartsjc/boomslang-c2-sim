@@ -1,6 +1,6 @@
 package br.com.gmltec.boomslang.kinect.air;
 
-import br.com.gmltec.boomslang.core.geo.GeoUtils;
+import br.com.gmltec.boomslangV2.core.utils.GeoUtils;
 
 public class Aircraft extends IAirplane{
 	private final double hor_error_unit_mt = 300;

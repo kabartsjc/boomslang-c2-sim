@@ -29,3 +29,4 @@ hs_err_pid*
 .settings/org.eclipse.m2e.core.prefs
 model/boomslang-c2-sim.vpp.bak_000f
 model/boomslang-c2-sim.vpp.bak_001d
+bin/
