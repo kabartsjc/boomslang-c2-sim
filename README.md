@@ -15,6 +15,7 @@
 ## 📝 Table of Contents
 
 - [About the Project](#about)
+- [Physical Engine Model](/PHY-ENGINE)
 - [License](/LICENSE)
 
 ## 🐍 What is Boomslang C2 Simulator? <a name = "about"></a>
