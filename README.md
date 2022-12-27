@@ -1,11 +1,30 @@
+<p align="center">
+  <a href="" rel="noopener">
+ <img src="resources/img/logo.png" alt="Bomslang C2 Simulator" width="100"></a>
+</p>
+
+<h2 align="center">Bomslang C2 Simulator</h2>
+
+<div align="center">
+
+![GitHub last commit](https://img.shields.io/github/last-commit/kabartsjc/boomslang-c2-sim)
+![GitHub issues](https://img.shields.io/github/issues/kabartsjc/boomslang-c2-sim)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/kabartsjc/boomslang-c2-sim)
+[![License](https://img.shields.io/badge/license-GPL-blue.svg)](/LICENSE)
+</div>
+
+
+
+
+
 # boomslang-c2-sim
 
 
 <h2> What is Boomslang C2 Simulator? </h2>
 
-**Boomslang** is a C2 simulator that provides an open-source tool to simulate new C2 doctrines and exercises. The main idea is to offer a simplistic modeling tool, enabling the design of complex exercises with different types of forces (air, land, navy, space, and cyber) and missions, and through his engine analyze the combination of individuals effects, providing to the analyst the cost, impact, and risk of the scenario. Moreover, it has an extensible design, enabling you to extend it to support your specific problem.
+**Boomslang** is a C2 simulator that provides an open-source tool to simulate new C2 doctrines and exercises. The main idea is to offer a simplistic modeling tool, enabling the design of complex exercises with different types of forces (air, land, navy, space, and cyber) and missions, and through his engine, analyze the combination of individuals effects, providing to the analyst the cost, impact, and risk of the scenario. Moreover, it has an extensible design, enabling you to extend it to support your specific problem.
 
-Its name is originated from a large, highly venomous snake in the family Colubridae. The boomslang can open its jaws as wide as 170 degrees when biting. Its venom is highly potent and contains a hemotoxin that disrupts a human's blood coagulation. That said, the venom is slow-acting, which helps buy time to obtain and anti-venom.
+Its name originated from a giant, highly venomous snake in the family Colubridae. The boomslang can open its jaws as wide as 170 degrees when biting. Its venom is highly potent and contains a hemotoxin that disrupts a human's blood coagulation. In addition, the poison is slow-acting, which helps buy time to obtain an anti-venom.
 
 <h2> Boomslang C2 Simulator General Architecture</h2>
 
