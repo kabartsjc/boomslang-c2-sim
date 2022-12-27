@@ -7,7 +7,7 @@ The **Physical Engine** is responsible for simulate the physical caractheristics
 The core class is **Entity**, it represents a entity in the environment and has a _plan_ and a _type_. A Entity has these important paramenters:
 - **status**: identifies the quality of the entity and can have the following values: {0 = no started, 1 = started, 2 = finished, and -1 = destroyed).
 - **team**: {BLUE, RED, GREEN}
-- **behavior**: { 0 = neutral, 1  = reactive, and -1 = aggressive}.
+- **behavior**: { 0 = neutral, 1  = reactive, and 2 = aggressive}.
 - **health**: can be a value between 0 and 1.
 
 An entity has a type (AIR, LAND, SEA, SPACE, or CYBER). The type has these parameters:
