@@ -2,7 +2,7 @@
 
 The **Physical Engine** is responsible for simulate the physical caractheristics of the simulation entities. There are four models: **cyber**, **space**, **sea**, **land**, and **air** entities.    
 
-<img src="resources/img/physical_engine.png" alt="Physical Engine Model" width="600">
+<img src="resources/img/physical_engine.png" alt="Physical Engine Model" width="900">
 
 The core class is **Entity**, it represents a entity in the environment and has a _plan_ and a _type_. A Entity has these important paramenters:
 - **status**: identifies the quality of the entity and can have the following values: {0 = no started, 1 = started, 2 = finished, and -1 = destroyed).
