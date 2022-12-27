@@ -1,0 +1,340 @@
+[
+	{
+		"id": "SAT",
+		"mobility_type":true,
+		"class_type":"SP",
+		"lethality_factor": 0.0,
+		"resilience_factor": 0.9,
+		"vulnerability_factor": 0.2,
+        "speed": 200.0,
+		"autonomy":9999.0,
+        "cost":1.0
+    },
+    {
+		"id": "ARMY",
+		"mobility_type":true,
+		"class_type": "LF",
+	    "lethality_factor": 0.6,
+		"resilience_factor": 0.8,
+		"vulnerability_factor": 0.6,
+        "speed": 4.16667,
+		"autonomy":9999.0,
+        "cost":0.4
+    },
+	{
+		"id": "BRIG",
+		"mobility_type":true,
+		"class_type": "LF",
+	    "lethality_factor": 0.6,
+		"resilience_factor": 0.75,
+		"vulnerability_factor": 0.65,
+        "speed": 5.16667,
+		"autonomy":9999.0,
+		"cost":0.75
+    },
+    {
+		"id": "BATTALION",
+		"mobility_type":true,
+		"class_type": "LF",
+	    "lethality_factor": 0.5,
+		"resilience_factor": 0.7,
+		"vulnerability_factor": 0.7,
+        "speed": 5.16667,
+		"autonomy":9999.0,
+		"cost":0.7
+    },
+    {
+		"id": "SPECIAL_FORCE",
+		"mobility_type":true,
+		"class_type": "LF",
+	    "lethality_factor": 0.7,
+		"resilience_factor": 0.9,
+		"vulnerability_factor": 0.3,
+        "speed":9.48,
+		"autonomy":9999.0,
+		"cost":0.52
+    },
+    {
+		"id": "ULV",
+		"mobility_type":false,
+		"cost":0.6,
+		"class_type": "LF",
+		"lethality_factor": 0.7,
+		"resilience_factor": 0.8,
+		"vulnerability_factor": 0.4,
+		"speed":20.48,
+		"autonomy":9999.0
+    },
+	{
+		"id": "SPY",
+		"mobility_type":true,
+		"class_type": "LF",
+	    "lethality_factor": 0.0,
+		"resilience_factor": 0.9,
+		"vulnerability_factor": 0.0,
+        "speed":3.48,
+		"autonomy":9999.0,
+		"cost":0.62
+    },
+    	{
+		"id": "CMD",
+		"mobility_type":false,
+		"class_type": "LF",
+		"cost":1.0,
+		"lethality_factor": 0.0,
+		"resilience_factor": 0.9,
+		"vulnerability_factor": 0.5
+    },
+    {
+		"id": "AIRDEFENSE",
+		"mobility_type":false,
+		"class_type": "LF",
+		"cost":0.9,
+		"lethality_factor": 0.8,
+		"resilience_factor": 0.8,
+		"vulnerability_factor": 0.3
+        },
+        
+        {
+		"id": "EW",
+		"mobility_type":false,
+		"class_type": "LF",
+		"cost":0.9,
+		"lethality_factor": 0.8,
+		"resilience_factor": 0.6,
+		"vulnerability_factor": 0.5
+        },
+   	{
+		"id": "GUNSYSTEM",
+		"mobility_type":false,
+		"cost":0.6,
+		"class_type": "LF",
+		"lethality_factor": 0.7,
+		"resilience_factor": 0.8,
+		"vulnerability_factor": 0.4
+    },
+    {
+		"id": "CRITICAL",
+		"mobility_type":false,
+		"cost":0.9,
+		"class_type": "LF",
+	    "lethality_factor": 0.0,
+		"resilience_factor": 0.3,
+		"vulnerability_factor": 1.0
+    },
+    {
+		"id": "ARTILLERY",
+		"mobility_type":false,
+		"cost":0.6,
+		"class_type": "LF",
+	    "lethality_factor": 0.8,
+		"resilience_factor": 0.7,
+		"vulnerability_factor": 0.5
+    },
+	{
+		"id": "MINE",
+		"mobility_type":false,
+		"cost":0.4,
+		"class_type": "LF",
+	    "lethality_factor": 1.0,
+		"resilience_factor": 0.0,
+		"vulnerability_factor": 0.0
+    },
+	{
+		"id": "CIV",
+		"mobility_type":false,
+		"cost":0.65,
+		"class_type": "LF",
+	    "lethality_factor": 0.0,
+		"resilience_factor": 0.2,
+		"vulnerability_factor": 0.9
+    },
+    
+    {
+		"id": "VIP",
+		"mobility_type":false,
+		"cost":0.99,
+		"class_type": "LF",
+	    "lethality_factor": 0.0,
+		"resilience_factor": 0.1,
+		"vulnerability_factor": 0.9
+    },
+       {
+		"id": "CBRANGERS",
+		"mobility_type":false,
+		"cost":0.99,
+		"class_type": "CB",
+	    "lethality_factor": 0.45,
+		"resilience_factor": 0.99,
+		"vulnerability_factor": 0.2,
+		"autonomy":3000.0	
+    },
+	{
+		"id": "DESTROYER",
+		"mobility_type":true,
+		"class_type": "SS",
+	    "lethality_factor": 0.95,
+		"resilience_factor": 0.95,
+		"vulnerability_factor": 0.5,
+        "speed": 15.8,
+		"climb_rate": 0.0,
+		"autonomy":3000.0,
+		"cost":0.7
+    },
+    {
+		"id": "USV",
+		"mobility_type":true,
+		"class_type": "SS",
+	    "lethality_factor": 0.75,
+		"resilience_factor": 0.75,
+		"vulnerability_factor": 0.8,
+        "speed": 15.8,
+		"climb_rate": 0.0,
+		"autonomy":3000.0,
+		"cost":0.9
+    },
+	{
+		"id": "NSUBMARINE",
+		"mobility_type":true,
+		"class_type": "SS",
+	    "lethality_factor": 1.00,
+		"resilience_factor": 0.95,
+		"vulnerability_factor": 0.0001,
+        "speed": 12.8,
+		"climb_rate": 2.0,
+		"autonomy":9999.0,
+		"cost":0.99		
+    },
+    {
+		"id": "CSUBMARINE",
+		"mobility_type":true,
+		"class_type": "SS",
+	    "lethality_factor": 0.90,
+		"resilience_factor": 0.85,
+		"vulnerability_factor": 0.1,
+        "speed": 12.8,
+		"climb_rate": 2.0,
+		"autonomy":9999.0,
+		"cost":0.89		
+    },
+    {
+		"id": "UUVS",
+		"mobility_type":true,
+		"class_type": "SS",
+	    "lethality_factor": 0.80,
+		"resilience_factor": 0.85,
+		"vulnerability_factor": 0.01,
+        "speed": 12.8,
+		"climb_rate": 2.0,
+		"autonomy":9999.0,
+		"cost":0.99		
+    },
+	{
+		"id": "AEROCARRIER",
+		"mobility_type":true,
+		"class_type": "SS",
+	    "lethality_factor": 0.99,
+		"resilience_factor": 0.90,
+		"vulnerability_factor": 0.02,
+        "speed": 15.8,
+		"climb_rate": 0.0,
+		"autonomy":9999.0,
+		"cost":0.92
+    },
+	{
+		"id": "CRUISER",
+		"mobility_type":true,
+		"class_type": "SS",
+	    "lethality_factor": 0.79,
+		"resilience_factor": 0.70,
+		"vulnerability_factor": 0.1,
+        "speed": 17.8,
+		"climb_rate": 0.0,
+		"autonomy":2000.0,
+		"cost":0.89
+    },
+    {
+		"id": "MERC_CIV",
+		"mobility_type":true,
+		"class_type": "SS",
+	    "lethality_factor": 0.0,
+		"resilience_factor": 0.20,
+		"vulnerability_factor": 0.9,
+        "speed": 17.8,
+		"climb_rate": 0.0,
+		"autonomy":2000.0,
+		"cost":0.6
+    },
+	{
+		"id": "FIGHTER",
+		"mobility_type":true,
+		"class_type": "AF",
+	    "lethality_factor": 0.90,
+		"resilience_factor": 0.85,
+		"vulnerability_factor": 0.4,
+        "speed": 670.5,
+		"climb_rate": 350.0,
+		"autonomy":12.0,
+		"cost":0.82
+    },
+	{
+		"id": "UAV",
+		"mobility_type":true,
+		"class_type": "AF",
+	    "lethality_factor": 0.7,
+		"resilience_factor": 0.45,
+		"vulnerability_factor": 0.6,
+        "speed":45.8,
+		"climb_rate": 100.0,
+		"autonomy":20.0,
+		"cost":0.72
+    },
+	{
+		"id": "HELI",
+		"mobility_type":true,
+		"class_type": "AF",
+	    "lethality_factor": 0.8,
+		"resilience_factor": 0.7,
+		"vulnerability_factor": 0.4,
+        "speed":79.9,
+		"climb_rate": 10.0,
+		"autonomy":12.0,
+		"cost":0.79
+    },
+    {
+		"id": "CARGO",
+		"mobility_type":true,
+		"class_type": "AF",
+	    "lethality_factor": 0.2,
+		"resilience_factor": 0.5,
+		"vulnerability_factor": 0.8,
+        "speed":100.9,
+		"climb_rate": 10.0,
+		"autonomy":12.0,
+		"cost":0.79
+    },
+     {
+		"id": "AIRVIP",
+		"mobility_type":true,
+		"class_type": "AF",
+	    "lethality_factor": 0.0,
+		"resilience_factor": 0.1,
+		"vulnerability_factor": 0.9,
+        "speed":100.9,
+		"climb_rate": 10.0,
+		"autonomy":12.0,
+		"cost":0.99
+    },
+	{
+		"id": "AEW",
+		"mobility_type":true,
+		"class_type": "AF",
+	    "lethality_factor": 0.4,
+		"resilience_factor": 0.9,
+		"vulnerability_factor": 0.6,
+        "speed":227.48,
+		"climb_rate": 100.0,
+		"autonomy":24.0,
+		"cost":0.93
+	}
+]

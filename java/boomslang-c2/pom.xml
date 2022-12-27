@@ -6,29 +6,52 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.0.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.gml-tec</groupId>
 	<artifactId>boomslang-c2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>boomslang-c2</name>
 	<description>Boomslang C2 Simulator</description>
+	
 	<properties>
 		<java.version>19</java.version>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.swinglabs.swingx/swingx-all -->
+		<dependency>
+			<groupId>org.swinglabs.swingx</groupId>
+			<artifactId>swingx-all</artifactId>
+			<version>1.6.5-1</version>
+		</dependency>
 
+		<dependency>
+			<groupId>org.jxmapviewer</groupId>
+			<artifactId>jxmapviewer2</artifactId>
+			<version>2.2</version>
+		</dependency>
+		
+	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -37,5 +60,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

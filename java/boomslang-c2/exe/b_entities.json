@@ -1,0 +1,262 @@
+[
+	{
+		"id": "BFIG1",
+		"type": "FIGHTER",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "AF",
+		"latitude": 9.114209,
+		"longitude": -24.103655,
+		"altitude": 7500.0
+	},
+	{
+		"id": "BFIG2",
+		"type": "FIGHTER",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "AF",
+		"latitude": 9.114209,
+		"longitude": -24.103655,
+		"altitude": 7500.0
+	},
+	{
+		"id": "BFIG3",
+		"type": "FIGHTER",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "AF",
+		"latitude": 10.114209,
+		"longitude": -23.103655,
+		"altitude": 7500.0
+	},
+	{
+		"id": "BFIG4",
+		"type": "FIGHTER",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "AF",
+		"latitude": 10.114209,
+		"longitude": -23.103655,
+		"altitude": 7500.0
+	},
+	{
+		"id": "BFIG5",
+		"type": "FIGHTER",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "AF",
+		"latitude": 11.687760,
+		"longitude": -20.563639,
+		"altitude": 7500.0
+	},
+	{
+		"id": "BFIG6",
+		"type": "FIGHTER",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "AF",
+		"latitude": 12.687760,
+		"longitude": -20.563639,
+		"altitude": 7500.0
+	},
+	{
+		"id": "BAEW1",
+		"type": "FIGHTER",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "AF",
+		"latitude": 10.687760,
+		"longitude": -21.563639,
+		"altitude": 7500.0
+	},
+	{
+		"id": "BUAV2",
+		"type": "UAV",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"latitude": 11.146634,
+		"longitude": -20.646775,
+		"altitude": 1200.0
+	},
+	{
+		"id": "BUAV3",
+		"type": "UAV",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"latitude": 11.146634,
+		"longitude": -20.646775,
+		"altitude": 900.0
+	},
+	{
+		"id": "BUAV4",
+		"type": "UAV",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"latitude": 10.146634,
+		"longitude": -21.646775,
+		"altitude": 1200.0
+	},
+	{
+		"id": "BUAV5",
+		"type": "UAV",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"latitude": 9.146634,
+		"longitude": -20.646775,
+		"altitude": 1200.0
+	},
+	{
+		"id": "BUAV6",
+		"type": "UAV",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"latitude": 11.146634,
+		"longitude": -22.646775,
+		"altitude": 900.0
+	},
+	{
+		"id": "BHEL1",
+		"type": "HELI",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"latitude": 10.214466,
+		"longitude": -12.450207,
+		"altitude": 1000.0
+	},
+	{
+		"id": "BHEL2",
+		"type": "HELI",
+		"behavior_mode": 2,
+		"team": "R",
+		"force": "AF",
+		"latitude": 10.214466,
+		"longitude": -11.450207,
+		"altitude": 1000.0
+	},
+	{
+		"id": "BCMD1",
+		"type": "CMD",
+		"behavior_mode": 0,
+		"team": "B",
+		"force": "LF",
+		"latitude": 9.956566,
+		"longitude": -13.004196,
+		"altitude": 0.0
+	},
+	{
+		"id": "BADEF1",
+		"type": "AIRDEFENSE",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "LF",
+		"latitude": 9.856566,
+		"longitude": -13.004196,
+		"altitude": 0.0
+	},
+	{
+		"id": "BAT1",
+		"type": "BAT",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "LF",
+		"latitude": 9.956566,
+		"longitude": -13.994196,
+		"altitude": 0.0
+	},
+	{
+		"id": "ART1",
+		"type": "ARTILLERY",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "LF",
+		"latitude": 9.956566,
+		"longitude": -12.004196,
+		"altitude": 0.0
+	},
+	{
+		"id": "BADEF2",
+		"type": "AIRDEFENSE",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "LF",
+		"latitude": 10.040413,
+		"longitude": -11.668832,
+		"altitude": 0.0
+	},
+	{
+		"id": "BCIV1",
+		"type": "CIV",
+		"behavior_mode": 0,
+		"team": "B",
+		"force": "LF",
+		"latitude": 10.240413,
+		"longitude": -11.998832,
+		"altitude": 0.0
+	},
+	{
+		"id": "BSF1",
+		"type": "SF",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "LF",
+		"latitude": 8.249140,
+		"longitude": -12.292102,
+		"altitude": 0.0
+	},
+	{
+		"id": "BSPY1",
+		"type": "SPY",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "LF",
+		"latitude": 8.449140,
+		"longitude": -12.292102,
+		"altitude": 0.0
+	},
+	{
+		"id": "BSUB1",
+		"type": "NSUBMARINE",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "SB",
+		"latitude": 9.886237,
+		"longitude": -18.053635,
+		"altitude": 0.0
+	},
+	{
+		"id": "BDET1",
+		"type": "DESTROYER",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "SS",
+		"latitude": 7.956496,
+		"longitude": -17.708385,
+		"altitude": 0.0
+	},
+	{
+		"id": "BAEROC1",
+		"type": "AEROCARRIER",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "SS",
+		"latitude": 8.156496,
+		"longitude": -17.708385,
+		"altitude": 0.0
+	},
+	{
+		"id": "BCRUIS1",
+		"type": "CRUISER",
+		"behavior_mode": 2,
+		"team": "B",
+		"force": "SS",
+		"latitude": 7.256496,
+		"longitude": -17.708385,
+		"altitude": 0.0
+	}
+]
