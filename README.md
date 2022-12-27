@@ -16,7 +16,6 @@
 
 - [About the Project](#about)
 - [License](/LICENSE)
-- [Leader](#leader)
 
 ## 🐍 What is Boomslang C2 Simulator? <a name = "about"></a>
 
