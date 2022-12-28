@@ -1,4 +1,4 @@
-package br.com.gmltec.boomslangc2.gui;
+package br.com.gmltec.boomslangc2.gui.editor;
 
 import br.com.gmltec.boomslangc2.phy.model.geo.Coordinate;
 import br.com.gmltec.boomslangc2.phy.model.types.IEntityType;
@@ -15,6 +15,7 @@ public class ScenarioEditorGui {
 	private MapPanel mapPanel;
 	
 	private IEntityType select_model;
+	private Coordinate selectPosition;
 	
 
 	public ScenarioEditorGui(Coordinate central_point) {
@@ -58,13 +59,14 @@ public class ScenarioEditorGui {
 		
 		
 		//SET CENTER
-		mapPanel=new MapPanel();
+		mapPanel=new MapPanel(this);
 		//set center area
 		mapPanel.configure(central_point, this);
 		mainFrame.getContentPane().add(mapPanel, BorderLayout.CENTER);
 		
-		//SET SOUTH
-		editorPanel=new EditorPanel();
+		//SET BOTTOM
+		editorPanel=new EditorPanel(this);
+		editorPanel.configure();
 		editorPanel.setBorder(
 	            BorderFactory.createTitledBorder(
 	            BorderFactory.createEtchedBorder(
@@ -81,6 +83,22 @@ public class ScenarioEditorGui {
 		this.select_model=model;
 		System.out.println("selected entity = "+select_model.getId());
 		
+	}
+
+	public void setSelectPosition(Coordinate geo) {
+		this.selectPosition=geo;
+		if (this.select_model!=null)
+			updateMap("add");
+	}
+	
+	public void updateMap(String ops) {
+		if (ops.equals("add"))
+			mapPanel.updateEntity(this.select_model, this.selectPosition);
+		
+		else {
+			//mapPanel.deleteEntity(this.select_model);
+		}
+			
 	}
 
 	

@@ -10,6 +10,11 @@ public class Coordinate extends GeoPosition{
 		super(latitude, longitude);
 		this.altitude = altitude;
 	}
+	
+	public Coordinate (GeoPosition geo) {
+		super(geo.getLatitude(),geo.getLongitude());
+		this.altitude=0;
+	}
 
 	public double getLatitude() {
 		return super.getLatitude();

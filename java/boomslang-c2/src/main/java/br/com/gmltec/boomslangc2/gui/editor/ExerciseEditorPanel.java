@@ -1,5 +1,8 @@
-package br.com.gmltec.boomslangc2.gui;
+package br.com.gmltec.boomslangc2.gui.editor;
 
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -9,6 +12,8 @@ public class ExerciseEditorPanel  extends JPanel{
 	private static final long serialVersionUID = 1L;
 	private JTextField tfExeName;
 	private JTextField txtSimuDuration;
+	
+	private JButton saveBt;
 	
 	public void configure() {
 		JLabel lblName = new JLabel("Exercise Name:");
@@ -31,6 +36,13 @@ public class ExerciseEditorPanel  extends JPanel{
 		txtSimuDuration.setEditable(true);
 		add(txtSimuDuration);
 		txtSimuDuration.setColumns(10);
+		
+		Icon icon = new ImageIcon("src/main/resources/icons/save.png");
+		
+		saveBt = new JButton(icon);
+		saveBt.setText("Save...");
+		add(saveBt);
+		
 				
 	}
 }

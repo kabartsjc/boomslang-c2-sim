@@ -1,4 +1,4 @@
-package br.com.gmltec.boomslangc2.gui;
+package br.com.gmltec.boomslangc2.gui.editor;
 
 import java.util.ArrayList;
 import java.util.HashMap;

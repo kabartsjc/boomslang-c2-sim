@@ -10,7 +10,7 @@ import java.awt.geom.Point2D;
 import org.jxmapviewer.JXMapViewer;
 import org.jxmapviewer.viewer.GeoPosition;
 
-import br.com.gmltec.boomslangc2.gui.MapPanel;
+import br.com.gmltec.boomslangc2.gui.editor.MapPanel;
 
 /**
  * Creates a selection rectangle based on mouse input
