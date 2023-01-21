@@ -64,19 +64,60 @@ private static final long serialVersionUID = -1640427669915833332L;
 	
 	private List<IEntityType> sorter(HashMap<String, IEntityType> entTypeDb) {
 		List<IEntityType> entityNoOrderList = new ArrayList<>(entTypeDb.values());
-		List<String>entNameL=new ArrayList<>();
+		
+		List<String>entNameSP=new ArrayList<>();
+		List<String>entNameLF=new ArrayList<>();
+		List<String>entNameCB=new ArrayList<>();
+		List<String>entNameSS=new ArrayList<>();
+		List<String>entNameAF=new ArrayList<>();
+		
 		for (IEntityType ent : entityNoOrderList) {
-			entNameL.add(ent.getId());
+			if (ent.getClassType().equals("SP"))
+				entNameSP.add(ent.getId());
+			if (ent.getClassType().equals("LF"))
+				entNameLF.add(ent.getId());
+			if (ent.getClassType().equals("CB"))
+				entNameCB.add(ent.getId());
+			if (ent.getClassType().equals("SS"))
+				entNameSS.add(ent.getId());
+			if (ent.getClassType().equals("AF"))
+				entNameAF.add(ent.getId());
 		}
 		
-		List<String> sortedList = entNameL.stream().sorted().collect(Collectors.toList());     
+		List<String> sortedSP= entNameSP.stream().sorted().collect(Collectors.toList());     
+		List<String> sortedLF= entNameLF.stream().sorted().collect(Collectors.toList());     
+		List<String> sortedCB= entNameCB.stream().sorted().collect(Collectors.toList());     
+		List<String> sortedSS= entNameSS.stream().sorted().collect(Collectors.toList());     
+		List<String> sortedAF= entNameAF.stream().sorted().collect(Collectors.toList());     
+		
 		
 		List<IEntityType> sortedEntTypeDBOrder = new ArrayList<>();
 		
-		for (String entId:sortedList) {
+		for (String entId:sortedSP) {
 			IEntityType entity = entTypeDb.get(entId);
 			sortedEntTypeDBOrder.add(entity);
 		}
+		
+		for (String entId:sortedLF) {
+			IEntityType entity = entTypeDb.get(entId);
+			sortedEntTypeDBOrder.add(entity);
+		}
+		
+		for (String entId:sortedCB) {
+			IEntityType entity = entTypeDb.get(entId);
+			sortedEntTypeDBOrder.add(entity);
+		}
+		
+		for (String entId:sortedSS) {
+			IEntityType entity = entTypeDb.get(entId);
+			sortedEntTypeDBOrder.add(entity);
+		}
+			
+		for (String entId:sortedAF) {
+			IEntityType entity = entTypeDb.get(entId);
+			sortedEntTypeDBOrder.add(entity);
+		}
+		
 		
 		return sortedEntTypeDBOrder ;
 	}

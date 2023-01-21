@@ -35,7 +35,7 @@ public class EntityUtils {
 					
 					String id = (String) jo.get("id");
 					String type = (String) jo.get("type");
-					int behavior_mode = (int)(long)jo.get("behavior_mode");
+					String behavior_mode = (String)jo.get("behavior_mode");
 					
 					String team = (String) jo.get("team");
 					String force = (String) jo.get("force");
@@ -47,7 +47,7 @@ public class EntityUtils {
 					
 					IEntityType entType = entTypeDB.get(type);
 					
-					ent = new Entity(id, team, force, behavior_mode, coord, entType);
+					ent = new Entity(id,null, team, force, behavior_mode, coord, entType);
 					
 					entDB.put(id, ent);
 				}

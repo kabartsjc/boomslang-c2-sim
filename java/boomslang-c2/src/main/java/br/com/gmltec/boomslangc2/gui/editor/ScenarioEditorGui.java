@@ -1,9 +1,16 @@
 package br.com.gmltec.boomslangc2.gui.editor;
 
+import br.com.gmltec.boomslangc2.phy.model.Entity;
 import br.com.gmltec.boomslangc2.phy.model.geo.Coordinate;
 import br.com.gmltec.boomslangc2.phy.model.types.IEntityType;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.Random;
+
+import java.util.List;
+
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
 
@@ -13,12 +20,14 @@ public class ScenarioEditorGui {
 	private EditorPanel editorPanel;
 	private PalletPanel palletPanel;
 	private MapPanel mapPanel;
+	private Random rand;
 	
 	private IEntityType select_model;
 	private Coordinate selectPosition;
 	
 
 	public ScenarioEditorGui(Coordinate central_point) {
+		this.rand = new Random();
 		initialize(central_point);
 	}
 
@@ -88,17 +97,37 @@ public class ScenarioEditorGui {
 	public void setSelectPosition(Coordinate geo) {
 		this.selectPosition=geo;
 		if (this.select_model!=null)
-			updateMap("add");
+			updateMap("add", null);
 	}
 	
-	public void updateMap(String ops) {
-		if (ops.equals("add"))
-			mapPanel.updateEntity(this.select_model, this.selectPosition);
-		
+	public void updateMap(String ops, String entityUIID) {
+		if (ops.equals("add")) {
+			String entUIName = mapPanel.updateEntity(this.select_model, this.selectPosition);
+			String id= select_model.getId()+rand.nextInt()%1000;
+			String force = select_model.getClassType();
+			
+			Entity entity = new Entity(id,entUIName, "BLUE", force,"Neutral",selectPosition,select_model );
+			editorPanel.updateModel(entity);
+		}
 		else {
-			//mapPanel.deleteEntity(this.select_model);
+			mapPanel.deleteEntity(entityUIID);
 		}
 			
+	}
+	
+	public void updateMap(Hashtable<String, Entity> entDB) {
+		List<Entity>entL = new ArrayList<>(entDB.values());
+		mapPanel.updateEntities(entL);
+
+	}
+	
+	
+	public Coordinate getCurrentPosition() {
+		return this.selectPosition;
+	}
+	
+	public IEntityType getSelectModel() {
+		return this.select_model;
 	}
 
 	

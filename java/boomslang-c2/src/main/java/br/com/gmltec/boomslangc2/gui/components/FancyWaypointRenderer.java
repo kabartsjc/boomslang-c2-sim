@@ -49,7 +49,7 @@ public class FancyWaypointRenderer implements  WaypointRenderer<EntityUI>
         URL imgURL = null;
         
         try {
-			imgURL =  new File("src/main/resources/icons/" + w.getIconName()).toURI().toURL();
+			imgURL =  new File("src/main/resources/icons_ent/" + w.getIconName()).toURI().toURL();
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}

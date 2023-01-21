@@ -27,5 +27,11 @@ public class Coordinate extends GeoPosition{
 	public double getAltitude() {
 		return altitude;
 	}
+	
+	@Override
+	public String toString() {
+		String posStr = getLatitude()+":"+getLongitude()+":"+altitude;
+		return posStr;
+	}
 
 }
