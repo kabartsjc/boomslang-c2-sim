@@ -13,16 +13,16 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
 
-public class ExerciseEditorPanel  extends JPanel{
+public class ExercisePanel  extends JPanel{
 	private static final long serialVersionUID = 1L;
 	private JTextField tfExeName;
 	private JTextField txtSimuDuration;
 	
 	private JButton saveBt;
 	
-	private ScenarioEditorGui scenGUI;
+	private EditorGui scenGUI;
 	
-	public ExerciseEditorPanel(ScenarioEditorGui scenGUI) {
+	public ExercisePanel(EditorGui scenGUI) {
 		this.scenGUI=scenGUI;
 	}
 	

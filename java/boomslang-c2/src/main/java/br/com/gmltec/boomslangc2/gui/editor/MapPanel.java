@@ -34,18 +34,18 @@ import br.com.gmltec.boomslangc2.phy.model.types.IEntityType;
 public class MapPanel extends JXMapViewer {
 	private static final long serialVersionUID = -1248296922602480848L;
 
-	private ScenarioEditorGui scenGUI;
+	private EditorGui scenGUI;
 
 	private Random random;
 
 	private Hashtable<String, EntityUI> entDb;
 
-	public MapPanel(ScenarioEditorGui scenGUI) {
+	public MapPanel(EditorGui scenGUI) {
 		this.scenGUI = scenGUI;
 		random = new Random(System.currentTimeMillis());
 	}
 
-	public void configure(Coordinate initPosition, ScenarioEditorGui mainGUI) {
+	public void configure(Coordinate initPosition, EditorGui mainGUI) {
 		entDb = new Hashtable<>();
 
 		final List<TileFactory> factories = new ArrayList<TileFactory>();

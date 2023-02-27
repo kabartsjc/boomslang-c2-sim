@@ -15,11 +15,11 @@ import java.util.List;
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
 
-public class ScenarioEditorGui {
+public class EditorGui {
 	private JFrame mainFrame;
-	private ExerciseEditorPanel exeDefPanel;
-	private EditorPanel editorPanel;
-	private PalletPanel palletPanel;
+	private ExercisePanel exercisePanel;
+	private EntitySelectionPanel entitySelectionPanel;
+	private EntityPalletPanel entityPalletPanel;
 	private MapPanel mapPanel;
 	private Random rand;
 	
@@ -27,14 +27,14 @@ public class ScenarioEditorGui {
 	private Coordinate selectPosition;
 	
 
-	public ScenarioEditorGui(Coordinate central_point) {
+	public EditorGui(Coordinate central_point) {
 		this.rand = new Random();
 		initialize(central_point);
 	}
 
 	public static void main(String[] args) {
 		Coordinate central_point= new Coordinate(1.863707, 44.836479, 0);
-		ScenarioEditorGui mg = new ScenarioEditorGui(central_point);
+		EditorGui mg = new EditorGui(central_point);
 		mg.createAndShowGUI();
 
 	}
@@ -47,25 +47,25 @@ public class ScenarioEditorGui {
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//SET TOP
-		exeDefPanel=new ExerciseEditorPanel(this);
-		exeDefPanel.configure();
-		exeDefPanel.setBorder(
+		exercisePanel=new ExercisePanel(this);
+		exercisePanel.configure();
+		exercisePanel.setBorder(
 	            BorderFactory.createTitledBorder(
 	            BorderFactory.createEtchedBorder(
 	                    EtchedBorder.RAISED, Color.GRAY
 	                    , Color.DARK_GRAY), "Exercise Panel Definition"));
-		mainFrame.getContentPane().add(exeDefPanel, BorderLayout.NORTH);
+		mainFrame.getContentPane().add(exercisePanel, BorderLayout.NORTH);
 		
 		//SET WEST
-		palletPanel=new PalletPanel(this);
+		entityPalletPanel=new EntityPalletPanel(this);
 		//entPanel.configure();
-		palletPanel.setBorder(
+		entityPalletPanel.setBorder(
 	            BorderFactory.createTitledBorder(
 	            BorderFactory.createEtchedBorder(
 	                    EtchedBorder.RAISED, Color.GRAY
 	                    , Color.DARK_GRAY), "Entity Pallete"));
 		
-		mainFrame.getContentPane().add(palletPanel, BorderLayout.WEST);
+		mainFrame.getContentPane().add(entityPalletPanel, BorderLayout.WEST);
 		
 		
 		//SET CENTER
@@ -75,14 +75,14 @@ public class ScenarioEditorGui {
 		mainFrame.getContentPane().add(mapPanel, BorderLayout.CENTER);
 		
 		//SET BOTTOM
-		editorPanel=new EditorPanel(this);
-		editorPanel.configure();
-		editorPanel.setBorder(
+		entitySelectionPanel=new EntitySelectionPanel(this);
+		entitySelectionPanel.configure();
+		entitySelectionPanel.setBorder(
 	            BorderFactory.createTitledBorder(
 	            BorderFactory.createEtchedBorder(
 	                    EtchedBorder.RAISED, Color.GRAY
 	                    , Color.DARK_GRAY), "Entity Selection Panel"));
-		mainFrame.getContentPane().add(editorPanel, BorderLayout.SOUTH);
+		mainFrame.getContentPane().add(entitySelectionPanel, BorderLayout.SOUTH);
 	}
 	
 	public void createAndShowGUI() {
@@ -108,7 +108,7 @@ public class ScenarioEditorGui {
 			String force = select_model.getClassType();
 			
 			Entity entity = new Entity(id,entUIName, "BLUE", force,"Neutral",selectPosition,select_model );
-			editorPanel.updateModel(entity);
+			entitySelectionPanel.updateModel(entity);
 		}
 		else {
 			mapPanel.deleteEntity(entityUIID);
@@ -139,7 +139,7 @@ public class ScenarioEditorGui {
 			
 			long duration_time_sec = simuH*60*60 + simuM*60;
 			
-			List<Entity>entList = editorPanel.getInformations();
+			List<Entity>entList = entitySelectionPanel.getInformations();
 			
 			boolean result_persist = MissionUtils.persistMission(exeName, duration_time_sec, entList);
 			

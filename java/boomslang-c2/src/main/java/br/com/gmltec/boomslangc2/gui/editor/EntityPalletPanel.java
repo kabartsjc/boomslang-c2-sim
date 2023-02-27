@@ -19,7 +19,7 @@ import br.com.gmltec.boomslangc2.phy.utils.EntityTypeUtils;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 
-public class PalletPanel extends JPanel  implements ListSelectionListener{
+public class EntityPalletPanel extends JPanel  implements ListSelectionListener{
 private static final long serialVersionUID = -1640427669915833332L;
 	
 	private JList <String>list = null;
@@ -27,10 +27,10 @@ private static final long serialVersionUID = -1640427669915833332L;
 	private String[] iconNames = null;
 
 	private HashMap<String,IEntityType> entTypeDb = null;
-	private ScenarioEditorGui scenarioPanel;
+	private EditorGui scenarioPanel;
 
 	
-	public PalletPanel(ScenarioEditorGui scenarioPanel) {
+	public EntityPalletPanel(EditorGui scenarioPanel) {
 		this.scenarioPanel=scenarioPanel;
 		setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		entTypeDb = EntityTypeUtils.loadEntityTypes();

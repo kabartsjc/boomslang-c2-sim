@@ -22,10 +22,10 @@ import javax.swing.table.TableColumn;
 
 import br.com.gmltec.boomslangc2.phy.model.Entity;
 
-public class EditorPanel extends JPanel {
+public class EntitySelectionPanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 
-	private ScenarioEditorGui scenGUI;
+	private EditorGui scenGUI;
 
 	private Hashtable<String, Entity> entDB;
 
@@ -39,7 +39,7 @@ public class EditorPanel extends JPanel {
 	private JButton updateBT;
 	
 
-	public EditorPanel(ScenarioEditorGui scenGUI) {
+	public EntitySelectionPanel(EditorGui scenGUI) {
 		// setLayout(new SpringLayout());
 		entDB = new Hashtable<>();
 		this.scenGUI = scenGUI;
@@ -85,10 +85,10 @@ public class EditorPanel extends JPanel {
 
 		JComboBox<Object> comboForceBox = new JComboBox<>();
 		comboForceBox.addItem("Air Force");
-		comboForceBox.addItem("Navy Forces");
-		comboForceBox.addItem("Land Forces");
-		comboForceBox.addItem("Space Forces");
-		comboForceBox.addItem("Cyber Forces");
+		comboForceBox.addItem("Navy Force");
+		comboForceBox.addItem("Land Force");
+		comboForceBox.addItem("Space Force");
+		comboForceBox.addItem("Cyber Force");
 		forceColumn.setCellEditor(new DefaultCellEditor(comboForceBox));
 
 		updateModel(null);
@@ -111,8 +111,24 @@ public class EditorPanel extends JPanel {
 		for (Entity ent : entL) {
 			String coordinate = ent.getPosition().toString();
 			String enttype = ent.getEntType().getId();
+			
 
-			model.addRow(new Object[] { ent.getId(), ent.getTeam(), ent.getBehavior_mode(), ent.getForce(), coordinate,
+			String force = ent.getForce();
+		
+			
+			if (force.equals("LF")) 
+				force = "Land Force";
+			else if (force.equals("SP"))
+				force = "Space Force";
+			else if (force.equals("AF"))
+				force = "Air Force";
+			else if (force.equals("CB"))
+				force = "Cyber Force";
+			else 
+				force = "Navy Force";
+			
+
+			model.addRow(new Object[] { ent.getId(), ent.getTeam(), ent.getBehavior_mode(), force, coordinate,
 					enttype });
 		}
 	}
@@ -147,17 +163,6 @@ public class EditorPanel extends JPanel {
 	}
 	
 	public List<Entity> getInformations() {
-		int selectLine = -1;
-		selectLine = table.getSelectedRow();
-		if (selectLine >= 0) {
-			String id = (String) table.getValueAt(selectLine, 0);
-			Entity ent = entDB.get(id);
-			entDB.remove(id);
-			model.removeRow(selectLine);
-			scenGUI.updateMap("del", ent.getEntityUIID());
-
-		}
-		
 		List<Entity>entList = new ArrayList<>(entDB.values());
 		return entList;
 	}
@@ -190,6 +195,17 @@ public class EditorPanel extends JPanel {
 					String team = (String) model.getValueAt(i, 1);
 					String behavior_mode = (String) model.getValueAt(i, 2);
 					String force= (String) model.getValueAt(i, 3);
+					
+					if (force.equals("Land Force")) 
+						force = "LF";
+					else if (force.equals("Space Force"))
+						force = "SP";
+					else if (force.equals("Air Force"))
+						force = "AF";
+					else if (force.equals("Cyber Force"))
+						force = "CB";
+					else 
+						force = "SS";
 					
 					Entity entity = entDB.get(id);
 					entity.setTeam(team);
