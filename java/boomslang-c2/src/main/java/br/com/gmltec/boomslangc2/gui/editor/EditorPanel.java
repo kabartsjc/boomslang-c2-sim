@@ -145,6 +145,22 @@ public class EditorPanel extends JPanel {
 		updateBT.addActionListener(new BtUpdateActionListener());
 
 	}
+	
+	public List<Entity> getInformations() {
+		int selectLine = -1;
+		selectLine = table.getSelectedRow();
+		if (selectLine >= 0) {
+			String id = (String) table.getValueAt(selectLine, 0);
+			Entity ent = entDB.get(id);
+			entDB.remove(id);
+			model.removeRow(selectLine);
+			scenGUI.updateMap("del", ent.getEntityUIID());
+
+		}
+		
+		List<Entity>entList = new ArrayList<>(entDB.values());
+		return entList;
+	}
 
 	private class BtDeleteActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {

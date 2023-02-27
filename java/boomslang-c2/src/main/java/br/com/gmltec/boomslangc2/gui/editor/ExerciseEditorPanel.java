@@ -1,12 +1,17 @@
 package br.com.gmltec.boomslangc2.gui.editor;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+
 
 public class ExerciseEditorPanel  extends JPanel{
 	private static final long serialVersionUID = 1L;
@@ -14,6 +19,12 @@ public class ExerciseEditorPanel  extends JPanel{
 	private JTextField txtSimuDuration;
 	
 	private JButton saveBt;
+	
+	private ScenarioEditorGui scenGUI;
+	
+	public ExerciseEditorPanel(ScenarioEditorGui scenGUI) {
+		this.scenGUI=scenGUI;
+	}
 	
 	public void configure() {
 		JLabel lblName = new JLabel("Exercise Name:");
@@ -43,6 +54,27 @@ public class ExerciseEditorPanel  extends JPanel{
 		saveBt.setText("Save...");
 		add(saveBt);
 		
+		saveBt.addActionListener(new BtSaveActionListener());
+		
+		
 				
 	}
+	
+	private class BtSaveActionListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			String exeName = tfExeName.getText();
+			String simuDuration = txtSimuDuration.getText();
+			
+			if (exeName!= null && simuDuration !=null) {
+				scenGUI.persistMission(exeName, simuDuration);
+			
+			} else {
+				JOptionPane.showMessageDialog(null, "It is required to fill exe name and simu duration.");
+			}
+		}
+	}
+	
+	
+	
+	
 }

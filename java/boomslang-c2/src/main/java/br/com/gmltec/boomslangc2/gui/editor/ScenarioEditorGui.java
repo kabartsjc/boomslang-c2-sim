@@ -3,6 +3,7 @@ package br.com.gmltec.boomslangc2.gui.editor;
 import br.com.gmltec.boomslangc2.phy.model.Entity;
 import br.com.gmltec.boomslangc2.phy.model.geo.Coordinate;
 import br.com.gmltec.boomslangc2.phy.model.types.IEntityType;
+import br.com.gmltec.boomslangc2.phy.utils.MissionUtils;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -46,7 +47,7 @@ public class ScenarioEditorGui {
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//SET TOP
-		exeDefPanel=new ExerciseEditorPanel();
+		exeDefPanel=new ExerciseEditorPanel(this);
 		exeDefPanel.configure();
 		exeDefPanel.setBorder(
 	            BorderFactory.createTitledBorder(
@@ -128,6 +129,37 @@ public class ScenarioEditorGui {
 	
 	public IEntityType getSelectModel() {
 		return this.select_model;
+	}
+
+	public void persistMission(String exeName, String simuDurationStr) {
+		String[] result = simuDurationStr.split(":");
+		try {
+			long simuH = Long.parseLong(result[0]);
+			long simuM = Long.parseLong(result[1]);
+			
+			long duration_time_sec = simuH*60*60 + simuM*60;
+			
+			List<Entity>entList = editorPanel.getInformations();
+			
+			boolean result_persist = MissionUtils.persistMission(exeName, duration_time_sec, entList);
+			
+			
+			if (result_persist==true) {
+				JOptionPane.showMessageDialog(null, "Nice Job - Mission Saved.","Boomslang C2 System", JOptionPane.INFORMATION_MESSAGE);
+			}
+			
+			else {
+				JOptionPane.showMessageDialog(null, "An error happens, please contact the maintenance!","Boomslang C2 System", JOptionPane.ERROR_MESSAGE);
+			}
+			
+		}catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "An error happens, please contact the maintenance!","Boomslang C2 System", JOptionPane.ERROR_MESSAGE);
+		}
+		
+		
+		
+		
+		
 	}
 
 	
